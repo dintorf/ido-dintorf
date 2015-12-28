@@ -159,6 +159,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 5451,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -167,10 +175,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 241.0,
-		"last_filter": "push c",
+		"height": 343.0,
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
 			[
 				"push c",
 				"Git: Push Current Branch"
@@ -178,10 +198,6 @@
 			[
 				"comm",
 				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add All"
 			],
 			[
 				"chan",
@@ -200,20 +216,12 @@
 				"Git: Change Branch"
 			],
 			[
-				"push",
-				"Git: Push Current Branch"
-			],
-			[
 				"format",
 				"CodeFormatter: Format as HTML Syntax"
 			],
 			[
 				"formatt",
 				"CodeFormatter: Format Code"
-			],
-			[
-				"commit",
-				"Git: Commit"
 			],
 			[
 				"push curr",
@@ -428,7 +436,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 673.0
+		"width": 601.0
 	},
 	"console":
 	{
@@ -451,9 +459,28 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/dintorf/Developer/ido.dintorf.com",
+		"/Users/dintorf/Developer/ido.dintorf.com/app",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/images",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/styles",
+		"/Users/dintorf/Developer/ido.dintorf.com/dist"
 	],
 	"file_history":
 	[
+		"/Users/dintorf/Developer/ido.dintorf.com/app/views/main.html",
+		"/Users/dintorf/Developer/ido.dintorf.com/Gruntfile.js",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/controllers/main.js",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/theme.js",
+		"/Users/dintorf/Developer/ido.dintorf.com/dist/index.html",
+		"/Users/dintorf/Developer/ido.dintorf.com/.tmp/styles/theme.css",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/styles/theme.css",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/styles/main.css",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/sample.html",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/dintorf/Developer/ido.dintorf.com/.gitignore",
+		"/Users/dintorf/Developer/ido.dintorf.com/bower.json",
+		"/Users/dintorf/Downloads/landingzero_334/sample.html",
 		"/Users/dintorf/Desktop/add_project2.php",
 		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/edit_project2.php",
 		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/add_project2.php",
@@ -568,24 +595,11 @@
 		"/Users/dintorf/Developer/wisecode/EmailVerificationService/EmailVerificationService/EmailVerificationSVC.cs",
 		"/Users/dintorf/Developer/wisecode/SECURE/TOOLS/Designation.asp",
 		"/Users/dintorf/Developer/wisecode/SECURE/PROPERTY/ChecklistSummaryEmail.ASP",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/GroupSelects.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/InsideTeamMember.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/javascript/fileUpload.js",
-		"/Users/dintorf/Developer/wisecode/App_Code/WASession.cs",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/util/LangUtils.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/Default.aspx.cs",
-		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/importPage.aspx",
-		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/Import.csproj",
-		"/Users/dintorf/Developer/wisecode/SECURE/Planner/AddEvent.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/calendar/timeZoneModel.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/javascript/fullcalendar.js",
-		"/Users/dintorf/Developer/wisecode/SECURE/CLIENTWELCOME.ASP",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/getCallList.asp",
-		"/Users/dintorf/Developer/wisecode/SECURE/includes/mobile/MobileLayout.asp"
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/GroupSelects.asp"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -603,6 +617,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"theme.js",
+			"(function($",
+			"scrollspy",
+			"$('body",
+			"$(function(",
+			"(function()",
+			"imagemin",
+			"header",
+			"relative",
+			"header",
+			"section",
+			"#one",
+			"section",
+			"min-height",
+			"routes.js",
 			"750",
 			"lender_additional",
 			"lender_name",
@@ -715,22 +744,7 @@
 			"SaveCAvatar",
 			"realid",
 			"clientid = ",
-			"ps",
-			"saveavatar",
-			"saveAvatar",
-			"SaveClient",
-			"saveclient",
-			"name: ",
-			".editable",
-			"profile-picture",
-			".editable",
-			"getAvatar",
-			"avatar",
-			"removeavatar",
-			"saveAvat",
-			"<<<<<<",
-			"renderNoteCategorySelect",
-			"renderNoteCategory"
+			"ps"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -759,8 +773,40 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								748,
+								748
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 340.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -820,6 +866,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"theme.css",
+				".tmp/styles/theme.css"
+			],
 			[
 				"edit_project2.php",
 				"wespacaz.com/admin/edit_project2.php"
@@ -1323,26 +1377,22 @@
 			[
 				"fullcalendar",
 				"wisecode/SECURE/javascript/fullCalendarUtils.js"
-			],
-			[
-				"notes-control",
-				"wisecode/SECURE/javascript/app.notes-controller.js"
-			],
-			[
-				"angulardata.asp",
-				"wisecode/SECURE/includes/util/angularData.asp"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"/Developer/Sublime Projects/wisecodegit.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

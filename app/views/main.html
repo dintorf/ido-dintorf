@@ -200,26 +200,70 @@
                 <p>Tell us that you're coming to the big event!</p>
             </div>
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <form class="contact-form row">
+                <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$isValid)" class="contact-form row" novalidate>
                     <div class="col-md-4">
                         <label></label>
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" name="name" id="name" ng-model="rsvp.name" placeholder="Name">
                     </div>
                     <div class="col-md-4">
                         <label></label>
-                        <input type="text" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" name="email" id="email" ng-model="rsvp.email" placeholder="Email">
                     </div>
                     <div class="col-md-4">
                         <label></label>
-                        <input type="text" class="form-control" placeholder="Phone">
+                        <input type="text" class="form-control" name="phone" id="phone" ng-model="rsvp.phone" placeholder="Phone">
+                    </div>
+                    <div class="wow fadeIn" ng-if="rsvp.answer == 2">
+                        <div class="help-block">&nbsp;</div>
+                        <div class="col-md-12">
+                            <span>+1 Details</span>
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" name="name" id="name" ng-model="rsvp.plus1.name" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="email" class="form-control" name="email" id="email" ng-model="rsvp.plus1.email" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" name="phone" id="phone" ng-model="rsvp.plus1.phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="help-block">&nbsp;</div>
+                    <span class="help-block">If you have a +1 be sure to select the middle option</span>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="answer" id="answer1" ng-model="rsvp.answer" value="1" checked>
+                                Deal Me In! <small class="text-muted">&nbsp;&nbsp;just me</small>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="answer" id="answer1" ng-model="rsvp.answer" value="2">
+                                We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="answer" id="answer2" ng-model="rsvp.answer" value="0">
+                                Sorry, Wish I Could Be There <small class="text-muted">&nbsp;&nbsp;:(</small>
+                            </label>
+                        </div>
                     </div>
                     <div class="col-md-12">
                         <label></label>
-                        <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                        <textarea class="form-control" rows="9" placeholder="Send us a note (optional)..."></textarea>
                     </div>
                     <div class="col-md-4 col-md-offset-4">
                         <label></label>
-                        <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                        <button type="submit" name="submit" class="btn btn-primary btn-block btn-lg">Send <i class="fa fa-arrow-right"></i></button>
                     </div>
                 </form>
             </div>

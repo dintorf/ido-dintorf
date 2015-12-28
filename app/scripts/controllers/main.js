@@ -15,6 +15,20 @@ angular.module('idodintorfcomApp')
       'Karma'
     ];
 
+    $scope.rsvp = {
+      answer: 1
+    };
+
+    $scope.$watch("rsvp.answer", function(newValue, oldValue) {
+      if(oldValue == "2"){
+        delete $scope.rsvp.plus1;
+      }
+    });
+
+    $scope.send = function(isValid){
+      console.log(isValid, $scope.rsvp);
+    };
+
     $('a.page-scroll').bind('click', function(event) {
         var $ele = $(this);
         $('html, body').stop().animate({
