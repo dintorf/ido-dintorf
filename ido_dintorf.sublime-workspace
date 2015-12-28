@@ -1,0 +1,1369 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Live",
+				"LiveAccountSid"
+			],
+			[
+				"error",
+				"error	.error()"
+			],
+			[
+				"alert",
+				"alert(${0:message})	Window"
+			],
+			[
+				"al",
+				"alert(${0:message})	Window"
+			],
+			[
+				"log",
+				"console.log('$0');"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
+				"record",
+				"recordCount"
+			],
+			[
+				"records",
+				"recordsPerPage"
+			],
+			[
+				"PFull",
+				"pFullAddress"
+			],
+			[
+				"sugge",
+				"suggestTags"
+			],
+			[
+				"insideteamname",
+				"insideteamname"
+			],
+			[
+				"Tok",
+				"TokenManager"
+			],
+			[
+				"contact",
+				"contactSummaryUtils"
+			],
+			[
+				"hasM",
+				"hasMailChimpAccount"
+			],
+			[
+				"message-cont",
+				"message-content"
+			],
+			[
+				"subje",
+				"subject_header"
+			],
+			[
+				"autho",
+				"authorizationUrl"
+			],
+			[
+				"realid",
+				"RealID"
+			],
+			[
+				"closed",
+				"totalClosed"
+			],
+			[
+				"unass",
+				"unassignedLeads"
+			],
+			[
+				"close",
+				"closedLeads"
+			],
+			[
+				"deliver",
+				"deliveredCount"
+			],
+			[
+				"delev",
+				"deliveredCount"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"endDate",
+				"endDateStr"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"market",
+				"marketingContactReport"
+			],
+			[
+				"create",
+				"createCallListPie"
+			],
+			[
+				"h",
+				"h"
+			],
+			[
+				"ToShot",
+				"ToShortDateString"
+			],
+			[
+				"vb",
+				"vbCrlf"
+			],
+			[
+				"cbri",
+				"CBirthRow"
+			],
+			[
+				"showC",
+				"showCCell"
+			],
+			[
+				"CEm",
+				"CEmailRow"
+			],
+			[
+				"CTit",
+				"CTitle"
+			],
+			[
+				"CTitl",
+				"CTitleRow"
+			],
+			[
+				"CComp",
+				"CCompany"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 241.0,
+		"last_filter": "push c",
+		"selected_items":
+		[
+			[
+				"push c",
+				"Git: Push Current Branch"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"chan",
+				"Git: Change Branch"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"chang",
+				"Git: Change Branch"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"format",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"formatt",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"push curr",
+				"Git: Push Current Branch"
+			],
+			[
+				"add all",
+				"Git: Add All"
+			],
+			[
+				"push cur",
+				"Git: Push Current Branch"
+			],
+			[
+				"new bra",
+				"Git: New Branch"
+			],
+			[
+				"change bra",
+				"Git: Change Branch"
+			],
+			[
+				"pull request",
+				"Github: Create Pull Request"
+			],
+			[
+				"pull",
+				"Github: Pull Requests"
+			],
+			[
+				"branch",
+				"Git: Change Branch"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"gbranch",
+				"Git: Change Branch"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"terminality",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"terminal",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"pull req",
+				"Github: Create Pull Request"
+			],
+			[
+				"gcomm",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"push ",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"commit push",
+				"Git (SideBarGit): Add & Commit & Push…"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"gitstatus",
+				"GitStatus: Changed files"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ngdoc",
+				"Snippet: $ngdoc - initiating complete skeleton with all @ngdoc-properties"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"docblock",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"docblockr",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"checkout ",
+				"Git (SideBarGit): Checkout repository to…"
+			],
+			[
+				"git checkout",
+				"Git (SideBarGit): Checkout to…"
+			],
+			[
+				"git gui",
+				"Git: Gui"
+			],
+			[
+				"pyap",
+				"PyYapf: Reformat Python"
+			],
+			[
+				"vbscript",
+				"Set Syntax: VBScript"
+			],
+			[
+				"formatcode",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"PackageControl",
+				"Package Control: Disable Package"
+			],
+			[
+				"package control",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packagecontrol",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 673.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"pwd",
+			"uploadaws",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/dintorf/Desktop/add_project2.php",
+		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/edit_project2.php",
+		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/add_project2.php",
+		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/edit_project2_pna.php",
+		"/Users/dintorf/Developer/Wespac/wespacaz.com/admin/edit_project2_pna_print.php",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/googlecontacts.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/Wa_Credits.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/SUMMARY.ASP",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/wa_credits.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/user/Wa_Enhanced.asp",
+		"/Users/dintorf/Developer/wisecode/Chat/apis.thewiseagent.com/v1/public/apis/wiseSMS_API.php",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/app.integrations-controller.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/user/integrationsMenu.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/user/integrations.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/client/Default.aspx.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/contactSummaryUtils.asp",
+		"/Users/dintorf/Documents/Ruby/temp",
+		"/Users/dintorf/Developer/wisecode/30dayfreetrial/terminal.glue",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Terminality/Default (OSX).sublime-keymap",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/Terminality.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Terminality/Terminality.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Terminality/README.md",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/Terminality.sublime-keymap",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Terminality/Default.sublime-keymap",
+		"/Users/dintorf/Developer/wisecode/default.asp",
+		"/Users/dintorf/Developer/wisecode/includes/contactTreble.asp",
+		"/Users/dintorf/Developer/wisecode/includes/Qaptcha.jquery.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/QapTcha.jquery.js",
+		"/Users/dintorf/Developer/wisecode/wa_tellafriend.asp",
+		"/Users/dintorf/Developer/wisecode/tellafriend.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Util/Cole_Response.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/app.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/marketing/MarketingCalendar.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/marketing/mktcalendar.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/css/icons.css",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/marketing/EventOccurrence.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/marketing/program.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/marketing/Event.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/marketing/Program.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/marketing/ProgramClients.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/marketing/mktevent.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/angular-includes.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Planner/ToDoList.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/Planner/Default.aspx.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/email/ConstantContact/ConstantContact/Default.aspx.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/client/Client.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/notes.asp",
+		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Service/Contacts.php",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/contactSummaryUtils.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/app.notes-controller.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/email/plainmail.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/email/EmailSender.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/util/angularData.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/client/notes.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/addclient.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/CLIENTLIST.ASP",
+		"/Users/dintorf/Developer/wisecode/SECURE/user/cloudCMA.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/email/EValidate.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Util/ApiMethod.cs",
+		"/Users/dintorf/Developer/wisecode/NfoKing/index.php",
+		"/Users/dintorf/Developer/wisecode/NfoKing/cloudCMA.php",
+		"/Users/dintorf/Developer/wisecode/SECURE/css/contactsummary.css",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Util/HG_API.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/callListUtils.js",
+		"/Users/dintorf/Developer/wisecode/Php/includes/user/CloudCMA.php",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/User/CloudCMA.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/CloudCMA.asp",
+		"/Users/dintorf/Desktop/test.py",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/PyYapf/PyYapf.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/SublimeAStyleFormatter/SublimeAStyleFormatter.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/CoolFormat/CoolFormatLib/CoolFormatConfig.cfconfig",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/DFormat/dformat.sublime-settings",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/User/AttachedFiles.cs",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/User/Blacklist.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/AccessToken.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/arch.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Contacts/ClientAvatars.cs",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Util/ImageUtils.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/LeadCaptureEmail.asp",
+		"/Users/dintorf/Developer/wisecode/myplace.thewiseagent.com/App.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/ChecklistSummary.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/client/ClientSearch.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Checklists/ChecklistNotes.cs",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Checklists/Checklist.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/util/modal.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/fullCalendarUtils.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/lockbox.ASP",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/headinc.asp",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/App.cs",
+		"/Users/dintorf/Developer/wisecode/App_Code/WiseAgent/Contacts/Client.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/attachfile2.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/Job_EmailValidation.asp",
+		"/Users/dintorf/Developer/wisecode/EmailVerificationService/EmailVerificationService/Program.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/client/Call.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/templates/MarketingLayout.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/templates/BaseLayout.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/USERMENU.ASP",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/menustyle_bootstrap.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/menustyle.asp",
+		"/Users/dintorf/Developer/wisecode/Php/includes/client/Category.php",
+		"/Users/dintorf/Developer/wisecode/SECURE/client/CLIENTWELCOME.ASP",
+		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Service/Calendar.php",
+		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Client.php",
+		"/Users/dintorf/Developer/wisecode/Php/Google/php-client/src/Google/Client.php",
+		"/Users/dintorf/Developer/wisecode/EmailVerificationService/EmailVerificationService/EmailVerificationSVC.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/TOOLS/Designation.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/PROPERTY/ChecklistSummaryEmail.ASP",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/GroupSelects.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/InsideTeamMember.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/fileUpload.js",
+		"/Users/dintorf/Developer/wisecode/App_Code/WASession.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/util/LangUtils.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/Default.aspx.cs",
+		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/importPage.aspx",
+		"/Users/dintorf/Developer/wisecode/SECURE/import/Import/Import.csproj",
+		"/Users/dintorf/Developer/wisecode/SECURE/Planner/AddEvent.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/calendar/timeZoneModel.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/javascript/fullcalendar.js",
+		"/Users/dintorf/Developer/wisecode/SECURE/CLIENTWELCOME.ASP",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/getCallList.asp",
+		"/Users/dintorf/Developer/wisecode/SECURE/includes/mobile/MobileLayout.asp"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/dintorf/wisecode",
+			"/Users/dintorf/wisecode\\",
+			"/Users/dintorf/wisecode/mobile",
+			"/Users/dintorf/wisecode"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"750",
+			"lender_additional",
+			"lender_name",
+			"500",
+			"750",
+			"500",
+			"lender_name",
+			"submit",
+			"500",
+			"submit",
+			"500",
+			"check_length",
+			"500",
+			"lender addi",
+			"spinner",
+			"please wait",
+			"paymentData",
+			"err",
+			"form-control",
+			"</option",
+			">",
+			"><option",
+			"modal",
+			"cma",
+			"\n\n                <div class=\"space-6\"></div>",
+			"<div class=\"space-6\"></div>",
+			"space6",
+			"saveClient",
+			"additional",
+			"noTabbing",
+			"Spouse",
+			"photo",
+			"noTabbing",
+			"notabbing",
+			"keyup",
+			"keydown",
+			"currStep",
+			"asp",
+			"todoimage",
+			"$(",
+			".ready",
+			"qaptcha",
+			"Qaptcha",
+			"log.",
+			"magic",
+			"result",
+			"<style",
+			"cssClass",
+			"calendar\"",
+			"event",
+			"!=",
+			"events",
+			"save",
+			"updateOccurrence",
+			"excludeDays",
+			"weekends",
+			"updateOccurrenceDates",
+			"twilio",
+			"GetTodoListJson",
+			"todo",
+			"ng-control",
+			"att",
+			"notes",
+			"preparenotefordisplay",
+			"angular.",
+			"replaceChr",
+			"chr(1)",
+			"notesjson",
+			"rendernotesjson",
+			"addNote",
+			"note",
+			"send",
+			"note",
+			"var name =",
+			"gritter-danger",
+			"Error",
+			"realId",
+			"last_gritter",
+			"ApiMethod",
+			"Http",
+			"name",
+			"name = ",
+			"send CMA",
+			"bootbox",
+			"confirm",
+			"openAddClient",
+			"confirm",
+			"Address",
+			"Avatar",
+			"saveavatar",
+			"avatare",
+			"removeAvatar",
+			"avatarEdi",
+			"Primary\"",
+			"existCat",
+			"'click', function",
+			"onclick=",
+			"avatareditabl",
+			"toggle",
+			"cats",
+			"togPhotoTab",
+			"imgPrimAv",
+			"clientId",
+			"var thumb",
+			".substring",
+			"base64",
+			"savecavatar",
+			"thumb",
+			"saveavatar",
+			"SaveCAvatar",
+			"realid",
+			"clientid = ",
+			"ps",
+			"saveavatar",
+			"saveAvatar",
+			"SaveClient",
+			"saveclient",
+			"name: ",
+			".editable",
+			"profile-picture",
+			".editable",
+			"getAvatar",
+			"avatar",
+			"removeavatar",
+			"saveAvat",
+			"<<<<<<",
+			"renderNoteCategorySelect",
+			"renderNoteCategory"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"form-control input-sm",
+			"",
+			">\n	<option",
+			"",
+			"space-6",
+			"editable-tab",
+			"",
+			"\"\"",
+			"",
+			"\" & realid & \"",
+			"%5C"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 94.0
+	},
+	"pinned_build_system": "",
+	"project": "ido_dintorf.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"edit_project2.php",
+				"wespacaz.com/admin/edit_project2.php"
+			],
+			[
+				"add_project2",
+				"wespacaz.com/admin/add_project2.php"
+			],
+			[
+				"edit_project2_pna",
+				"wespacaz.com/admin/edit_project2_pna.php"
+			],
+			[
+				"edit_project",
+				"wespacaz.com/admin/edit_project2.php"
+			],
+			[
+				"edit_project_pna",
+				"wespacaz.com/admin/edit_project2_pna.php"
+			],
+			[
+				"googlecontacts.asp",
+				"wisecode/SECURE/client/googlecontacts.asp"
+			],
+			[
+				"integrationm",
+				"wisecode/SECURE/user/integrationsMenu.asp"
+			],
+			[
+				"wa_enhanced.asp",
+				"wisecode/SECURE/user/Wa_Enhanced.asp"
+			],
+			[
+				"wa_credits",
+				"wisecode/SECURE/javascript/wa_credits.js"
+			],
+			[
+				"summary",
+				"wisecode/SECURE/client/SUMMARY.ASP"
+			],
+			[
+				"wacredits",
+				"wisecode/SECURE/includes/user/Wa_Credits.asp"
+			],
+			[
+				"integrations.asp",
+				"wisecode/SECURE/user/integrations.asp"
+			],
+			[
+				"wisesmsapi",
+				"wisecode/Chat/apis.thewiseagent.com/v1/public/apis/wiseSMS_API.php"
+			],
+			[
+				"integrationsmenu",
+				"wisecode/SECURE/user/integrationsMenu.asp"
+			],
+			[
+				"integrationscontr",
+				"wisecode/SECURE/javascript/app.integrations-controller.js"
+			],
+			[
+				"client/default.aspx",
+				"wisecode/SECURE/client/client/Default.aspx.cs"
+			],
+			[
+				"client/default.asp",
+				"wisecode/SECURE/client/client/Default.aspx.cs"
+			],
+			[
+				"summar",
+				"wisecode/SECURE/client/SUMMARY.ASP"
+			],
+			[
+				"contactsummaryutil",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"summary.asp",
+				"wisecode/SECURE/client/SUMMARY.ASP"
+			],
+			[
+				"temp",
+				"Ruby/temp"
+			],
+			[
+				"wisesms",
+				"wisecode/Chat/apis.thewiseagent.com/v1/public/apis/wiseSMS_API.php"
+			],
+			[
+				"app.integr",
+				"wisecode/SECURE/javascript/app.integrations-controller.js"
+			],
+			[
+				"app.integ",
+				"wisecode/SECURE/javascript/app.integrations-controller.js"
+			],
+			[
+				"wa_tellaf",
+				"wisecode/wa_tellafriend.asp"
+			],
+			[
+				"qaptcha.jquery.asp",
+				"wisecode/includes/Qaptcha.jquery.asp"
+			],
+			[
+				"qaptcha.j",
+				"wisecode/SECURE/javascript/QapTcha.jquery.js"
+			],
+			[
+				"default.asp",
+				"wisecode/default.asp"
+			],
+			[
+				"contacttreble.as",
+				"wisecode/includes/contactTreble.asp"
+			],
+			[
+				"wa_tellafriend.asp",
+				"wisecode/wa_tellafriend.asp"
+			],
+			[
+				"tellafriend.asp",
+				"wisecode/tellafriend.asp"
+			],
+			[
+				"cole",
+				"wisecode/App_Code/WiseAgent/Util/Cole_Response.cs"
+			],
+			[
+				"app.js",
+				"wisecode/SECURE/javascript/app.js"
+			],
+			[
+				"marketingcalendar",
+				"wisecode/SECURE/includes/marketing/MarketingCalendar.asp"
+			],
+			[
+				"mktcalendar",
+				"wisecode/SECURE/marketing/mktcalendar.asp"
+			],
+			[
+				"icons.css",
+				"wisecode/SECURE/css/icons.css"
+			],
+			[
+				"angular-includes",
+				"wisecode/SECURE/javascript/angular-includes.asp"
+			],
+			[
+				"program.asp",
+				"wisecode/SECURE/marketing/program.asp"
+			],
+			[
+				"mkteventocc.asp",
+				"wisecode/SECURE/includes/marketing/EventOccurrence.asp"
+			],
+			[
+				"mktprogramclient",
+				"wisecode/SECURE/marketing/ProgramClients.asp"
+			],
+			[
+				"event.asp",
+				"wisecode/SECURE/includes/marketing/Event.asp"
+			],
+			[
+				"integrationme",
+				"wisecode/SECURE/user/integrationsMenu.asp"
+			],
+			[
+				"mkteve",
+				"wisecode/SECURE/marketing/mktevent.asp"
+			],
+			[
+				"integrations-contr",
+				"wisecode/SECURE/javascript/app.integrations-controller.js"
+			],
+			[
+				"mktevent",
+				"wisecode/SECURE/marketing/mktevent.asp"
+			],
+			[
+				"todolist.cs",
+				"wisecode/App_Code/WiseAgent/Planner/ToDoList.cs"
+			],
+			[
+				"planner/default.as",
+				"wisecode/SECURE/Planner/Default.aspx.cs"
+			],
+			[
+				"client.asp",
+				"wisecode/SECURE/includes/client/Client.asp"
+			],
+			[
+				"notes.asp",
+				"wisecode/SECURE/client/notes.asp"
+			],
+			[
+				"php/google/google-api-php-client/contacts",
+				"wisecode/Php/Google/google-api-php-client/src/Google/Service/Contacts.php"
+			],
+			[
+				"contactsummaryutils.js",
+				"wisecode/SECURE/javascript/contactSummaryUtils.js"
+			],
+			[
+				"app.notes",
+				"wisecode/SECURE/javascript/app.notes-controller.js"
+			],
+			[
+				"client/default.aspx.cs",
+				"wisecode/SECURE/client/client/Default.aspx.cs"
+			],
+			[
+				"angulardata.",
+				"wisecode/SECURE/includes/util/angularData.asp"
+			],
+			[
+				"includes/client/notes",
+				"wisecode/SECURE/includes/client/notes.asp"
+			],
+			[
+				"contactsummary",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"client/default",
+				"wisecode/SECURE/client/client/Default.aspx.cs"
+			],
+			[
+				"emailsender",
+				"wisecode/SECURE/includes/email/EmailSender.asp"
+			],
+			[
+				"plainmail.asp",
+				"wisecode/SECURE/email/plainmail.asp"
+			],
+			[
+				"contactsummar",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"includes/client/notes.asp",
+				"wisecode/SECURE/includes/client/notes.asp"
+			],
+			[
+				"evalidate.asp",
+				"wisecode/SECURE/includes/email/EValidate.asp"
+			],
+			[
+				"apimethod",
+				"wisecode/App_Code/WiseAgent/Util/ApiMethod.cs"
+			],
+			[
+				"nfoking",
+				"wisecode/NfoKing/index.php"
+			],
+			[
+				"hg_api",
+				"wisecode/App_Code/WiseAgent/Util/HG_API.cs"
+			],
+			[
+				"cloudcma.asp",
+				"wisecode/SECURE/user/cloudCMA.asp"
+			],
+			[
+				"calllistutils",
+				"wisecode/SECURE/javascript/callListUtils.js"
+			],
+			[
+				"addclient.js",
+				"wisecode/SECURE/javascript/addclient.js"
+			],
+			[
+				"clientlist.asp",
+				"wisecode/SECURE/client/CLIENTLIST.ASP"
+			],
+			[
+				"contactsummary.cs",
+				"wisecode/SECURE/css/contactsummary.css"
+			],
+			[
+				"wiseagent/user/",
+				"wisecode/App_Code/WiseAgent/User/Blacklist.cs"
+			],
+			[
+				"app_code/wiseagent/user/",
+				"wisecode/App_Code/WiseAgent/User/AttachedFiles.cs"
+			],
+			[
+				"secure/includes/user/",
+				"wisecode/SECURE/includes/user/AccessToken.asp"
+			],
+			[
+				"user/email",
+				"wisecode/SECURE/includes/user/LeadCaptureEmail.asp"
+			],
+			[
+				"arch.asp",
+				"wisecode/SECURE/client/arch.asp"
+			],
+			[
+				"imageutils.cs",
+				"wisecode/App_Code/WiseAgent/Util/ImageUtils.cs"
+			],
+			[
+				"clientavatars",
+				"wisecode/App_Code/WiseAgent/Contacts/ClientAvatars.cs"
+			],
+			[
+				"summaryutil",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"summary.",
+				"wisecode/SECURE/client/SUMMARY.ASP"
+			],
+			[
+				".cs",
+				"wisecode/myplace.thewiseagent.com/App.cs"
+			],
+			[
+				"checklistsummary.asp",
+				"wisecode/SECURE/client/ChecklistSummary.asp"
+			],
+			[
+				"includes/notes.as",
+				"wisecode/SECURE/includes/client/notes.asp"
+			],
+			[
+				"secure/includes/notes.asp",
+				"wisecode/SECURE/includes/client/notes.asp"
+			],
+			[
+				"clientsearch",
+				"wisecode/SECURE/includes/client/ClientSearch.asp"
+			],
+			[
+				"lockbox.asp",
+				"wisecode/SECURE/client/lockbox.ASP"
+			],
+			[
+				"checklistnotes",
+				"wisecode/App_Code/WiseAgent/Checklists/ChecklistNotes.cs"
+			],
+			[
+				"fullcalenda",
+				"wisecode/SECURE/javascript/fullCalendarUtils.js"
+			],
+			[
+				"checklist.cs",
+				"wisecode/App_Code/WiseAgent/Checklists/Checklist.cs"
+			],
+			[
+				"headinc.asp",
+				"wisecode/SECURE/includes/headinc.asp"
+			],
+			[
+				"includes/util/modal",
+				"wisecode/SECURE/includes/util/modal.asp"
+			],
+			[
+				"contactsummarycss",
+				"wisecode/SECURE/css/contactsummary.css"
+			],
+			[
+				"app.cs",
+				"wisecode/App_Code/WiseAgent/App.cs"
+			],
+			[
+				"attachfile.cs",
+				"wisecode/App_Code/WiseAgent/User/AttachedFiles.cs"
+			],
+			[
+				"contactsummaryu",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"contactsummaryutils",
+				"wisecode/SECURE/javascript/contactSummaryUtils.asp"
+			],
+			[
+				"attachfile2",
+				"wisecode/SECURE/client/attachfile2.asp"
+			],
+			[
+				"app_code/client",
+				"wisecode/App_Code/WiseAgent/Contacts/Client.cs"
+			],
+			[
+				"attachfile2.asp",
+				"wisecode/SECURE/client/attachfile2.asp"
+			],
+			[
+				"/client/default.aspx",
+				"wisecode/SECURE/client/client/Default.aspx.cs"
+			],
+			[
+				"",
+				"Ruby/temp"
+			],
+			[
+				"menustyle",
+				"wisecode/SECURE/includes/user/menustyle_bootstrap.asp"
+			],
+			[
+				"usermenu.asp",
+				"wisecode/SECURE/USERMENU.ASP"
+			],
+			[
+				"baselayout",
+				"wisecode/SECURE/includes/templates/BaseLayout.asp"
+			],
+			[
+				"marketinglayout",
+				"wisecode/SECURE/includes/templates/MarketingLayout.asp"
+			],
+			[
+				"includes/client/",
+				"wisecode/Php/includes/client/Category.php"
+			],
+			[
+				"includes/client/notes.",
+				"wisecode/SECURE/includes/client/notes.asp"
+			],
+			[
+				"calendar.php",
+				"wisecode/Php/Google/google-api-php-client/src/Google/Service/Calendar.php"
+			],
+			[
+				"client.php",
+				"wisecode/Php/Google/google-api-php-client/src/Google/Client.php"
+			],
+			[
+				"php-client/src/google/",
+				"wisecode/Php/Google/php-client/src/Google/Client.php"
+			],
+			[
+				"emailverificationservice",
+				"wisecode/EmailVerificationService/EmailVerificationService/EmailVerificationSVC.cs"
+			],
+			[
+				"emailverification",
+				"wisecode/EmailVerificationService/EmailVerificationService/EmailVerificationSVC.cs"
+			],
+			[
+				"job_emailvalidation.asp",
+				"wisecode/SECURE/includes/user/Job_EmailValidation.asp"
+			],
+			[
+				"clientwelcom",
+				"wisecode/SECURE/client/CLIENTWELCOME.ASP"
+			],
+			[
+				"designation",
+				"wisecode/SECURE/TOOLS/Designation.asp"
+			],
+			[
+				"checklistsummaryemail",
+				"wisecode/SECURE/PROPERTY/ChecklistSummaryEmail.ASP"
+			],
+			[
+				"planner/default.a",
+				"wisecode/SECURE/Planner/Default.aspx.cs"
+			],
+			[
+				"import/csproj",
+				"wisecode/SECURE/import/Import/Import.csproj"
+			],
+			[
+				"import/import/importpage",
+				"wisecode/SECURE/import/Import/importPage.aspx"
+			],
+			[
+				"import/default.aspx.cs",
+				"wisecode/SECURE/import/Import/Default.aspx.cs"
+			],
+			[
+				"addevent.asp",
+				"wisecode/SECURE/Planner/AddEvent.asp"
+			],
+			[
+				"planner/default.aspx.cs",
+				"wisecode/SECURE/Planner/Default.aspx.cs"
+			],
+			[
+				"fullcalendar.js",
+				"wisecode/SECURE/javascript/fullcalendar.js"
+			],
+			[
+				"timezonemodel",
+				"wisecode/SECURE/includes/calendar/timeZoneModel.asp"
+			],
+			[
+				"clientwelcome.asp",
+				"wisecode/SECURE/client/CLIENTWELCOME.ASP"
+			],
+			[
+				"clentwelcome.asp",
+				"wisecode/SECURE/CLIENTWELCOME.ASP"
+			],
+			[
+				"fullcalendar",
+				"wisecode/SECURE/javascript/fullCalendarUtils.js"
+			],
+			[
+				"notes-control",
+				"wisecode/SECURE/javascript/app.notes-controller.js"
+			],
+			[
+				"angulardata.asp",
+				"wisecode/SECURE/includes/util/angularData.asp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 306.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
