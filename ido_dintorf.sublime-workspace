@@ -166,6 +166,22 @@
 				"buffer_size": 5451,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 16414,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/main.js",
+			"settings":
+			{
+				"buffer_size": 1012,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -186,6 +202,10 @@
 			[
 				"commit",
 				"Git: Commit"
+			],
+			[
+				"add all",
+				"Git: Add All"
 			],
 			[
 				"add",
@@ -226,10 +246,6 @@
 			[
 				"push curr",
 				"Git: Push Current Branch"
-			],
-			[
-				"add all",
-				"Git: Add All"
 			],
 			[
 				"push cur",
@@ -463,8 +479,10 @@
 		"/Users/dintorf/Developer/ido.dintorf.com/app",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/images",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/controllers",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/styles",
-		"/Users/dintorf/Developer/ido.dintorf.com/dist"
+		"/Users/dintorf/Developer/ido.dintorf.com/app/views",
+		"/Users/dintorf/Developer/ido.dintorf.com/dist/images"
 	],
 	"file_history":
 	[
@@ -773,7 +791,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -789,8 +807,8 @@
 						"selection":
 						[
 							[
-								748,
-								748
+								2378,
+								2378
 							]
 						],
 						"settings":
@@ -804,7 +822,69 @@
 						"translation.y": 340.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13291,
+								13291
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3013.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
