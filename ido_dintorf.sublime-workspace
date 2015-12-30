@@ -163,7 +163,23 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 5451,
+				"buffer_size": 5813,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".tmp/styles/theme.css",
+			"settings":
+			{
+				"buffer_size": 29224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 1344,
 				"line_ending": "Unix"
 			}
 		},
@@ -171,7 +187,7 @@
 			"file": "app/views/main.html",
 			"settings":
 			{
-				"buffer_size": 16414,
+				"buffer_size": 17378,
 				"line_ending": "Unix"
 			}
 		},
@@ -191,10 +207,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 343.0,
-		"last_filter": "push",
+		"height": 173.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"push",
 				"Git: Push Current Branch"
@@ -282,10 +302,6 @@
 			[
 				"gbranch",
 				"Git: Change Branch"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"remove ",
@@ -481,8 +497,7 @@
 		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/controllers",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/styles",
-		"/Users/dintorf/Developer/ido.dintorf.com/app/views",
-		"/Users/dintorf/Developer/ido.dintorf.com/dist/images"
+		"/Users/dintorf/Developer/ido.dintorf.com/app/views"
 	],
 	"file_history":
 	[
@@ -800,15 +815,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5451,
+						"buffer_size": 5813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2378,
-								2378
+								1027,
+								1027
 							]
 						],
 						"settings":
@@ -819,38 +834,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 340.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/main.html",
+					"file": ".tmp/styles/theme.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16414,
+						"buffer_size": 29224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13291,
-								13291
+								406,
+								406
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3013.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -858,6 +873,68 @@
 				},
 				{
 					"buffer": 2,
+					"file": "app/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14316,
+								13020
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Galea.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2847.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "app/scripts/controllers/main.js",
 					"semi_transient": false,
 					"settings":
@@ -884,7 +961,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -947,12 +1024,12 @@
 		"selected_items":
 		[
 			[
-				"main.js",
-				"app/scripts/controllers/main.js"
-			],
-			[
 				"theme.css",
 				".tmp/styles/theme.css"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
 			],
 			[
 				"edit_project2.php",
@@ -1464,9 +1541,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "wise",
 		"selected_items":
 		[
+			[
+				"wise",
+				"/Developer/Sublime Projects/wisecodegit.sublime-project"
+			],
 			[
 				"",
 				"/Developer/Sublime Projects/wisecodegit.sublime-project"
