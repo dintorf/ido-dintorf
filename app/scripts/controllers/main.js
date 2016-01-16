@@ -8,7 +8,7 @@
  * Controller of the idodintorfcomApp
  */
 angular.module('idodintorfcomApp')
-  .controller('MainCtrl', function ($scope, $sce, instagram) {
+  .controller('MainCtrl', function ($scope, $sce, $uibModal) {
     $scope.rsvp = {
       answer: 1
     };
@@ -42,18 +42,112 @@ angular.module('idodintorfcomApp')
         { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg'},
         { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg'},
         { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg'},
-      ];
+    ];
+
+    $scope.open = function (source) {
+
+      var modalInstance = $uibModal.open({
+        templateUrl: 'imgModal.html',
+        controller: 'ImgModalCtrl',
+        size: 'lg',
+        resolve: {
+          source: function () {
+            return source;
+          }
+        }
+      });
+
+      modalInstance.result.then(function (selectedItem) {
+        $scope.selected = selectedItem;
+      }, function () {
+        $log.info('Modal dismissed at: ' + new Date());
+      });
+    };
+
+    $scope.teams = [
+      {
+        type: "Bridesmaids",
+        people: [
+          {
+            name: "Brittany",
+            title: "Co-Made of Honor",
+            img: "",
+            details: "Brittany's details..."
+          },
+          {
+            name: "Lindsay",
+            title: "Co-Made of Honor",
+            img: "",
+            details: "Lindsay's details..."
+          },
+          {
+            name: "Marci",
+            title: "Bridesmaid",
+            img: "",
+            details: "Marci's details..."
+          },
+          {
+            name: "Ellie",
+            title: "Bridesmaid",
+            img: "",
+            details: "Ellie's details..."
+          },
+          {
+            name: "Dana",
+            title: "Bridesmaid",
+            img: "",
+            details: "Dana's details..."
+          }
+        ]
+      },
+      {
+        type: "Groomsmen",
+        people: [
+          {
+            name: "Adam",
+            title: "Best Man",
+            img: "",
+            details: "Adam's details..."
+          },
+          {
+            name: "Scott",
+            title: "Groomsman",
+            img: "",
+            details: "Scott's details..."
+          },
+          {
+            name: "Matt",
+            title: "Groomsman",
+            img: "",
+            details: "Matt's details..."
+          },
+          {
+            name: "Trevor",
+            title: "Groomsman",
+            img: "",
+            details: "Trevor's details..."
+          },
+          {
+            name: "Billy",
+            title: "Groomsman",
+            img: "",
+            details: "Billy's details..."
+          }
+        ]
+      }
+    ];
 
     $('#galleryModal').on('show.bs.modal', function (e) {
        $('#galleryImage').attr('src',$(e.relatedTarget).data('src'));
     });
+  });
 
-    instagram.fetchHashtag("dogs", function(data) {
-        for(var i=0; i<data.length; i++) {
-          if (typeof $scope.have[data[i].id]==="undefined") {
-            $scope.pics.push(data[i]) ;
-            $scope.have[data[i].id] = "1";
-          }
-        }
-    });
+angular.module('idodintorfcomApp')
+  .controller('ImgModalCtrl', function ($scope, $uibModalInstance, source) {
+
+    $scope.source = source;
+
+    $scope.close = function () {
+      $uibModalInstance.dismiss('close');
+    };
   });

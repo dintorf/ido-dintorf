@@ -16,30 +16,41 @@ angular.module('idodintorfcomApp', [
     'ngSanitize',
     'firebase',
     'firebase.ref',
-    'firebase.auth'
+    'firebase.auth',
+    'ui.bootstrap'
   ])
     .config(function($mdThemingProvider) {
       // Extend the theme with a few different colors
-      var primary = $mdThemingProvider.extendPalette('deep-purple', {
-        '500': '39006A'
+      $mdThemingProvider.definePalette('idodintorfPallette', {
+        '50':  'ffffff',
+        '100': 'cbc7d8', 
+        '200': 'ffffff', 
+        '300': 'ffffff',
+        '400': 'b2c1ba', 
+        '500': 'b2c1ba',
+        '600': 'f2edea', 
+        '700': 'ffffff', 
+        '800': 'ffffff',
+        '900': 'ffffff', 
+        'A100': 'ffffff',
+        'A200': '9d9ebc',
+        'A400': '4f5275',
+        'A700': '6d6e83',
       });
-      var accent = $mdThemingProvider.extendPalette('green', {
-        'A200': '85EC84',
-        'A700': '71B265',
-      });
-      var warn = $mdThemingProvider.extendPalette('pink', {
-        '500': 'B299B0',
-        'A100': 'CCBDB4'
-      });
-      // Register the new color palette map with the name <code>idodintorfPrimary</code>
-      $mdThemingProvider.definePalette('idodintorfPrimary', primary);
-      $mdThemingProvider.definePalette('idodintorfAccent', accent);
-      $mdThemingProvider.definePalette('idodintorfWarn', warn);
+
 
       // Use that theme for the primary intentions
       $mdThemingProvider.theme('default')
-        .primaryPalette('idodintorfPrimary')
-        .accentPalette('idodintorfAccent')
-        .warnPalette('idodintorfWarn')
-        .backgroundPalette('grey');
+        .primaryPalette('idodintorfPallette', {
+          'default': '400', // by default use shade 400 from the idodintorf palette for primary intentions
+          'hue-1': '100', // use shade 100 for the <code>md-hue-1</code> class
+          'hue-2': '600', // use shade 600 for the <code>md-hue-2</code> class
+        })
+        // If you specify less than all of the keys, it will inherit from the
+        // default shades
+        .accentPalette('idodintorfPallette', {
+          'default': 'A200', // use shade A200 for default, and keep all other shades the same
+          'hue-1': 'A400', // use shade A400 for the <code>md-hue-1</code> class
+          'hue-2': 'A700', // use shade A700 for the <code>md-hue-2</code> class
+        });
     });

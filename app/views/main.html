@@ -25,65 +25,45 @@
     <div class="container-fluid">
         <md-grid-list md-cols="3" md-row-height="3:2">
             <md-grid-tile ng-repeat="image in images" md-colspan="1" md-rowspan="1">
-              <img ng-src="{{image.src}}" class="img-responsive" alt="Image 1">
+              <img ng-src="{{image.src}}" ng-click="open(image.src)" class="img-responsive" alt="Image 1">
             </md-grid-tile>
         </md-grid-list>
     </div>
 </section>
 <section class="container-fluid" id="team">
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+    <div layout="column">
+        <div flex>
             <h2 class="text-center text-primary">The Team</h2>
             <hr>
-            <div class="media wow fadeInRight">
-                <h3>Simple</h3>
-                <div class="media-body media-middle">
-                    <p>What could be easier? Get started fast with this landing page starter theme.</p>
+        </div>
+        <div class="container" flex>
+            <md-content class="md-padding" layout-wrap layout-align="center start" flex layout-gt-sm="row">
+                <div flex-gt-sm ng-repeat="team in teams track by $index">
+                    <md-card class="wow" ng-repeat="people in team.people track by $index" ng-class="{'fadeInRight': $even, 'fadeInLeft': $odd}">
+                        <md-card-title ng-if="$even">
+                            <md-card-title-text>
+                                <span class="md-headline">{{people.name}}</span>
+                                <span class="md-subhead">{{people.title}}</span>
+                            </md-card-title-text>
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media"></div>
+                            </md-card-title-media>
+                        </md-card-title>
+                        <md-card-title ng-if="$odd">
+                            <md-card-title-media>
+                                <div class="md-media-sm card-media"></div>
+                            </md-card-title-media>
+                            <md-card-title-text>
+                                <span class="md-headline text-right">{{people.name}}</span>
+                                <span class="md-subhead text-right">{{people.title}}</span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <p>{{people.details}}</p>
+                        </md-card-content>
+                    </md-card>
                 </div>
-                <div class="media-right">
-                    <i class="fa fa-bolt fa-3x"></i>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeIn">
-                <h3>Free</h3>
-                <div class="media-left">
-                    <a href="#alertModal" data-toggle="modal" data-target="#alertModal"><i class="fa fa-download fa-3x"></i></a>
-                </div>
-                <div class="media-body media-middle">
-                    <p>Yes, please. Grab it for yourself, and make something awesome with this.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeInRight">
-                <h3>Unique</h3>
-                <div class="media-body media-middle">
-                    <p>Because you don't want your Bootstrap site, to look like a Bootstrap site.</p>
-                </div>
-                <div class="media-right">
-                    <i class="fa fa-fire fa-3x"></i>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeIn">
-                <h3>Popular</h3>
-                <div class="media-left">
-                    <i class="fa fa-heart fa-3x"></i>
-                </div>
-                <div class="media-body media-middle">
-                    <p>There's good reason why Bootstrap is the most used frontend framework in the world.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="media wow fadeInRight">
-                <h3>Tested</h3>
-                <div class="media-body media-middle">
-                    <p>Bootstrap is matured and well-tested. It's a stable codebase that provides consistency.</p>
-                </div>
-                <div class="media-right">
-                    <i class="fa fa-flask fa-3x"></i>
-                </div>
-            </div>
+            </md-content>
         </div>
     </div>
 </section>
@@ -149,7 +129,7 @@
 	                            </md-input-container>
 	                        </div>
 	                        <div layout-gt-sm="row" ng-if="rsvp.answer == 2" class="wow fadeIn">
-	                            <span class="md-body-1 text-accent" flex-gt-sm>+1 Details</span>
+	                            <span class="text-primary" flex-gt-sm>+1 Details</span>
 	                        </div>
 	                        <div layout-gt-sm="row" ng-if="rsvp.answer == 2" class="wow fadeIn">
 	                            <md-input-container class="md-block" flex-gt-sm>
@@ -166,7 +146,7 @@
 	                            </md-input-container>
 	                        </div>
 	                        <div layout-gt-sm="row" ng-if="rsvp.answer != 2" class="wow fadeIn">
-	                            <span class="md-caption text-accent" flex-gt-sm>
+	                            <span class="text-primary" flex-gt-sm>
 	                            	If you have a +1 be sure to select the middle option
 	                            	<br />
 	                            	<i class="fa fa-arrow-down hidden-xs"></i>
@@ -175,13 +155,13 @@
 	                        <md-radio-group ng-model="rsvp.answer">
 		                        <div layout-gt-sm="row">
 		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="1" class="md-primary"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
+		                            	<md-radio-button value="1" class="md-accent md-hue-1"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
 		                            </md-input-container>
 		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="2" class="md-primary"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small> </md-radio-button>
+		                            	<md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small> </md-radio-button>
 		                            </md-input-container>
 		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="0" class="md-primary"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
+		                            	<md-radio-button value="0" class="md-accent md-hue-1"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
 		                            </md-input-container>
 		                        </div>
 	                        </md-radio-group>
@@ -228,13 +208,12 @@
 <footer id="footer">
     <div class="container-fluid">
         <div layout-gt-sm="row">
-            <div flex-gt-sm>
+            <div flex-gt-sm style="margin-right:10px">
                 <h4>Instagram</h4>
                 <!-- SnapWidget -->
-                <iframe src="http://snapwidget.com/sc/?u=ZGludG9yZnxpbnwyNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=010116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:500px; height:250px"></iframe>
-                <!-- <iframe src="http://snapwidget.com/sc/?h=ZGRub3Y1MjAxNnxpbnwyNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=010116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; height:250px"></iframe> -->
+                <iframe src="http://snapwidget.com/sc/?u=ZGludG9yZnxpbnwyNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=010116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
             </div>
-            <div flex-gt-sm>
+            <div flex-gt-sm style="margin-right:10px" align="center">
                 <h4>Tweets</h4>
                 <a class="twitter-timeline" href="https://twitter.com/hashtag/DDNov52016" data-widget-id="683119156724563969">#DDNov52016 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
@@ -246,3 +225,11 @@
         <br/>
     </div>
 </footer>
+<script type="text/ng-template" id="imgModal.html">
+    <div class="modal-body">
+        <img class="img-responsive" ng-src="{{source}}" />
+    </div>
+    <div class="modal-footer">
+        <md-button type="button" class="md-raised md-accent" ng-click="close()">Close</md-button>
+    </div>
+</script>

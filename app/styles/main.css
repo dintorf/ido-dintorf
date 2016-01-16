@@ -6,3 +6,7 @@
 .thumbnail{
   display:inline;
 }
+
+.img-responsive{
+	max-height:100%;
+}
