@@ -2,7 +2,9 @@
     <div class="header-content">
         <div class="inner">
             <h1 class="cursive">Dylan & Danielle</h1>
-            <h4>To have and to hold</h4>
+            <h3>To have and to hold</h3>
+            <h3>{{save_the_date}}</h3>
+            <h3>{{countdown}}</h3>
             <hr>
             <a href="#story" class="btn btn-primary btn-xl page-scroll">Our Story</a>
         </div>
@@ -15,7 +17,7 @@
                 <h2 class="margin-top-0 text-primary">Our Story</h2>
                 <br>
                 <p>
-                This is the spot where our story will go
+                Stay tuned!
                 </p>
             </div>
         </div>
@@ -39,8 +41,8 @@
         <div class="container" flex>
             <md-content class="md-padding" layout-wrap layout-align="center start" flex layout-gt-sm="row">
                 <div flex-gt-sm ng-repeat="team in teams track by $index">
-                    <md-card class="wow" ng-repeat="people in team.people track by $index" ng-class="{'fadeInRight': $even, 'fadeInLeft': $odd}">
-                        <md-card-title ng-if="$even">
+                    <md-card class="wow" ng-repeat="people in team.people" ng-class="{'fadeInRight': $even, 'fadeInLeft': $odd}">
+                        <md-card-title ng-if="$parent.$index == 0">
                             <md-card-title-text>
                                 <span class="md-headline">{{people.name}}</span>
                                 <span class="md-subhead">{{people.title}}</span>
@@ -49,7 +51,7 @@
                                 <div class="md-media-sm card-media"></div>
                             </md-card-title-media>
                         </md-card-title>
-                        <md-card-title ng-if="$odd">
+                        <md-card-title ng-if="$parent.$index == 1">
                             <md-card-title-media>
                                 <div class="md-media-sm card-media"></div>
                             </md-card-title-media>
@@ -77,15 +79,15 @@
         </div>
     </div>
     <div class="container">
-        <div layout-gt-sm="row">
-            <div class="text-center" flex-gt-sm>
+        <div layout-gt-sm="row" layout-margin>
+            <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}">
                 <div class="feature">
-                    <i class="fa fa-laptop fa-3x wow fadeInLeft" data-wow-delay=".3s"></i>
-                    <h3>Responsive</h3>
-                    <p class="text-muted">Your site looks good everywhere</p>
+                    <i class="fa fa-{{tip.icon}} fa-3x" data-wow-delay=".3s"></i>
+                    <h3>{{tip.title}}</h3>
+                    <p class="text-muted text-left" ng-bind-html="tip.details"></p>
                 </div>
             </div>
-            <div class="text-center" flex-gt-sm>
+            <!-- <div class="text-center" flex-gt-sm>
                 <div class="feature">
                     <i class="fa fa-user fa-3x wow fadeInUp" data-wow-delay=".2s"></i>
                     <h3>Customizable</h3>
@@ -98,7 +100,7 @@
                     <h3>Consistent</h3>
                     <p class="text-muted">A mature, well-tested, stable codebase</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -108,9 +110,10 @@
             <div flex class="text-center">
                 <h2 class="margin-top-0 text-primary wow fadeIn">RSVP</h2>
                 <hr class="primary">
-                <p>Tell us that you're coming to the big event!</p>
+                <h4>Coming Soon!</h4>
+                <!-- <p>Tell us that you're coming to the big event!</p> -->
             </div>
-            <div flex class="text-center">
+            <!-- <div flex class="text-center">
                 <md-content layout-padding>
 	                <div>
 	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$isValid)" class="contact-form row" novalidate>
@@ -179,7 +182,7 @@
 	                    </form>
 	                </div>
                 </md-content>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -207,16 +210,16 @@
 </section>
 <footer id="footer">
     <div class="container-fluid">
+        <!-- <h4>Social Media</h4> -->
         <div layout-gt-sm="row">
-            <div flex-gt-sm style="margin-right:10px">
+            <!-- <div flex-gt-sm style="margin-right:10px">
                 <h4>Instagram</h4>
-                <!-- SnapWidget -->
                 <iframe src="http://snapwidget.com/sc/?u=ZGludG9yZnxpbnwyNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=010116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
             </div>
             <div flex-gt-sm style="margin-right:10px" align="center">
                 <h4>Tweets</h4>
                 <a class="twitter-timeline" href="https://twitter.com/hashtag/DDNov52016" data-widget-id="683119156724563969">#DDNov52016 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
+            </div> -->
             <div flex-gt-sm>
                 <h4>Facebook</h4>
                 <div class="fb-comments" data-href="http://ido.dintorf.com" data-numposts="5" data-colorscheme="dark" data-order-by="reverse_time" data-width="100%"></div>

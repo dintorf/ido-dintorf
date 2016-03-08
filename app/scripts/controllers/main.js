@@ -13,6 +13,12 @@ angular.module('idodintorfcomApp')
       answer: 1
     };
 
+    $scope.theDay = moment('11/05/2016');
+    $scope.save_the_date = $scope.theDay.format('MM.DD.YYYY');
+    $scope.today = moment(moment().format('MM/DD/YYYY'));
+
+    $scope.countdown = $scope.today.to($scope.theDay);
+
     $scope.$watch('rsvp.answer', function(newValue, oldValue) {
       if(oldValue === '2'){
         delete $scope.rsvp.plus1;
@@ -70,33 +76,33 @@ angular.module('idodintorfcomApp')
         people: [
           {
             name: "Brittany",
-            title: "Co-Made of Honor",
+            title: "Maid of Honor",
             img: "",
-            details: "Brittany's details..."
+            details: ""
           },
           {
             name: "Lindsay",
-            title: "Co-Made of Honor",
+            title: "Maid of Honor",
             img: "",
-            details: "Lindsay's details..."
+            details: ""
           },
           {
             name: "Marci",
             title: "Bridesmaid",
             img: "",
-            details: "Marci's details..."
+            details: ""
           },
           {
             name: "Ellie",
             title: "Bridesmaid",
             img: "",
-            details: "Ellie's details..."
+            details: ""
           },
           {
             name: "Dana",
             title: "Bridesmaid",
             img: "",
-            details: "Dana's details..."
+            details: ""
           }
         ]
       },
@@ -107,34 +113,52 @@ angular.module('idodintorfcomApp')
             name: "Adam",
             title: "Best Man",
             img: "",
-            details: "Adam's details..."
+            details: ""
           },
           {
             name: "Scott",
             title: "Groomsman",
             img: "",
-            details: "Scott's details..."
-          },
-          {
-            name: "Matt",
-            title: "Groomsman",
-            img: "",
-            details: "Matt's details..."
+            details: ""
           },
           {
             name: "Trevor",
             title: "Groomsman",
             img: "",
-            details: "Trevor's details..."
+            details: ""
           },
           {
             name: "Billy",
             title: "Groomsman",
             img: "",
-            details: "Billy's details..."
+            details: ""
+          },
+          {
+            name: "Matt",
+            title: "Groomsman",
+            img: "",
+            details: ""
           }
         ]
       }
+    ];
+
+    $scope.tips = [
+      {
+        icon: 'h-square',
+        title: 'Where to Stay',
+        details: "<h4 class='text-center'>Hampton Inn & Suites by Hilton</h4> We have reserved both single and double rooms at the brand new Hampton Inn! Please reach out to Samantha via the contact information below to reserve your room and make sure you mention the Intorf/Palbykin Wedding. <br><br> Phone: (480)-654-4000 <br> Email: Samantha.Lehrer2@hiltion.com.",
+      },
+      {
+        icon: 'clock-o',
+        title: 'Timeline',
+        details: "<h4 class='text-center'>Coming soon</h4>",
+      },
+      {
+        icon: 'bus',
+        title: 'Transportation',
+        details: "<h4 class='text-center'>Coming soon</h4>",
+      },
     ];
 
     $('#galleryModal').on('show.bs.modal', function (e) {
