@@ -7,6 +7,7 @@
             <h3>{{countdown}}</h3>
             <hr>
             <a href="#story" class="btn btn-primary btn-xl page-scroll">Our Story</a>
+            <!-- <h3>Coming Soon!</h3> -->
         </div>
     </div>
 </header>
@@ -25,9 +26,33 @@
 </section>
 <section id="photos" class="no-padding">
     <div class="container-fluid">
-        <md-grid-list md-cols="3" md-row-height="3:2">
-            <md-grid-tile ng-repeat="image in images" md-colspan="1" md-rowspan="1">
-              <img ng-src="{{image.src}}" ng-click="open(image.src)" class="img-responsive" alt="Image 1">
+        <md-grid-list
+            md-cols-xs="3" md-cols-sm="3" md-cols-md="6" md-cols-gt-md="6"
+            md-row-height-gt-md="1:1" md-row-height="2:2"
+            md-gutter="12px" md-gutter-gt-sm="8px" >
+            <md-grid-tile
+                md-rowspan="2" md-colspan="1" md-colspan-sm="1">
+              <img src="images/DD_Port1.jpg" ng-click="open($event, 'images/DD_Port1.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+            </md-grid-tile>
+            <md-grid-tile
+                md-rowspan="1" md-colspan="2">
+              <img src="images/DD_Land1.jpg" ng-click="open($event, 'images/DD_Land1.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+            </md-grid-tile>
+            <md-grid-tile
+                md-rowspan="1" md-colspan="2">
+              <img src="images/DD_Land5.jpg" ng-click="open($event, 'images/DD_Land5.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+            </md-grid-tile>
+            <md-grid-tile
+                md-rowspan="2" md-colspan="1" md-colspan-sm="1">
+              <img src="images/DD_Port2.jpg" ng-click="open($event, 'images/DD_Port2.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+            </md-grid-tile>
+            <md-grid-tile
+                md-rowspan="1" md-colspan="2">
+              <img src="images/DD_Land4.jpg" ng-click="open($event, 'images/DD_Land4.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+            </md-grid-tile>
+            <md-grid-tile
+                md-rowspan="1" md-colspan="2">
+              <img src="images/DD_Land3.jpg" ng-click="open($event, 'images/DD_Land3.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
         </md-grid-list>
     </div>
@@ -38,34 +63,16 @@
             <h2 class="text-center text-primary">The Team</h2>
             <hr>
         </div>
-        <div class="container" flex>
-            <md-content class="md-padding" layout-wrap layout-align="center start" flex layout-gt-sm="row">
-                <div flex-gt-sm ng-repeat="team in teams track by $index">
-                    <md-card class="wow" ng-repeat="people in team.people" ng-class="{'fadeInRight': $even, 'fadeInLeft': $odd}">
-                        <md-card-title ng-if="$parent.$index == 0">
-                            <md-card-title-text>
-                                <span class="md-headline">{{people.name}}</span>
-                                <span class="md-subhead">{{people.title}}</span>
-                            </md-card-title-text>
-                            <md-card-title-media>
-                                <div class="md-media-sm card-media"></div>
-                            </md-card-title-media>
-                        </md-card-title>
-                        <md-card-title ng-if="$parent.$index == 1">
-                            <md-card-title-media>
-                                <div class="md-media-sm card-media"></div>
-                            </md-card-title-media>
-                            <md-card-title-text>
-                                <span class="md-headline text-right">{{people.name}}</span>
-                                <span class="md-subhead text-right">{{people.title}}</span>
-                            </md-card-title-text>
-                        </md-card-title>
-                        <md-card-content>
-                            <p>{{people.details}}</p>
-                        </md-card-content>
-                    </md-card>
+        <div class="container" layout="row" layout-align="space-around start" flex>
+            <md-list ng-repeat="team in teams">
+              <h2 class="md-headline text-center text-primary">{{ team.type }}</h2>
+              <md-list-item ng-repeat="member in team.people">
+                <div class="md-list-item-text" layout="column">
+                  <h3 class="md-title">{{ member.name }} | {{ member.title }}</h3>
+                  <p>{{ member.details }}</p>
                 </div>
-            </md-content>
+              </md-list-item>
+            </md-list>
         </div>
     </div>
 </section>
@@ -78,29 +85,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div layout-gt-sm="row" layout-margin>
-            <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}">
-                <div class="feature">
-                    <i class="fa fa-{{tip.icon}} fa-3x" data-wow-delay=".3s"></i>
-                    <h3>{{tip.title}}</h3>
-                    <p class="text-muted text-left" ng-bind-html="tip.details"></p>
-                </div>
+    <div layout-gt-sm="row" layout-align="space-around start">
+        <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}">
+            <div class="feature">
+                <md-icon class="md-36 text-white" data-wow-delay=".3s">{{tip.icon}}</md-icon>
+                <h3 class="md-headline"><b>{{tip.title}}</b></h3>
+                <p class="text-muted text-center" ng-bind-html="tip.details"></p>
             </div>
-            <!-- <div class="text-center" flex-gt-sm>
-                <div class="feature">
-                    <i class="fa fa-user fa-3x wow fadeInUp" data-wow-delay=".2s"></i>
-                    <h3>Customizable</h3>
-                    <p class="text-muted">Easy to theme and customize with SASS</p>
-                </div>
-            </div>
-            <div class="text-center" flex-gt-sm>
-                <div class="feature">
-                    <i class="fa fa-star fa-3x wow fadeInRight" data-wow-delay=".3s"></i>
-                    <h3>Consistent</h3>
-                    <p class="text-muted">A mature, well-tested, stable codebase</p>
-                </div>
-            </div> -->
         </div>
     </div>
 </section>
@@ -110,16 +101,15 @@
             <div flex class="text-center">
                 <h2 class="margin-top-0 text-primary wow fadeIn">RSVP</h2>
                 <hr class="primary">
-                <h4>Coming Soon!</h4>
-                <!-- <p>Tell us that you're coming to the big event!</p> -->
+                <p>Tell us that you're coming to the big event!</p>
             </div>
-            <!-- <div flex class="text-center">
+            <div flex class="text-center">
                 <md-content layout-padding>
 	                <div>
 	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$isValid)" class="contact-form row" novalidate>
 	                        <div layout-gt-sm="row">
 	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Name</label>
+		                            <label>Full Name</label>
 		                            <input name="name" ng-model="rsvp.name">
 	                            </md-input-container>
 	                            <md-input-container class="md-block" flex-gt-sm>
@@ -182,7 +172,7 @@
 	                    </form>
 	                </div>
                 </md-content>
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
@@ -199,7 +189,6 @@
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
                 <div class="feature">
-                    <!-- <i class="fa fa-gift fa-3x wow fadeInDown" data-wow-delay=".3s"></i> -->
                     <p class="">We've chosen to register with Zola, an easy-to-use registry site that enables us to register for the gifts we want, all in one place. If you'd like to give us a gift on Zola, click the logo below!</p>
                     <div class="help-block"></div>
                     <a href="https://www.zola.com/registry/dintorf" target="_blank"><img class="wow fadeInUp thumbnail" data-wow-delay=".3s" src="/images/zola.png" width="150"/></a>
@@ -210,7 +199,7 @@
 </section>
 <footer id="footer">
     <div class="container-fluid">
-        <!-- <h4>Social Media</h4> -->
+        <h4>Social Media</h4>
         <div layout-gt-sm="row">
             <!-- <div flex-gt-sm style="margin-right:10px">
                 <h4>Instagram</h4>
@@ -229,10 +218,30 @@
     </div>
 </footer>
 <script type="text/ng-template" id="imgModal.html">
+    <md-dialog aria-label="Gallery"  ng-cloak>
+      <form>
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2>Gallery</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="close()">
+              <i class="fa fa-times fa-2x"></i>
+            </md-button>
+          </div>
+        </md-toolbar>
+        <md-dialog-content>
+          <div class="md-dialog-content">
+            <img class="img-responsive" ng-src="{{source}}" />
+          </div>
+        </md-dialog-content>
+      </form>
+    </md-dialog>
+</script>
+<!-- <script type="text/ng-template" id="imgModal.html">
+    <div class="modal-header">
+        <md-button type="button" class="md-raised md-accent" ng-click="close()">Close</md-button>
+    </div>
     <div class="modal-body">
         <img class="img-responsive" ng-src="{{source}}" />
     </div>
-    <div class="modal-footer">
-        <md-button type="button" class="md-raised md-accent" ng-click="close()">Close</md-button>
-    </div>
-</script>
+</script> -->

@@ -74,6 +74,10 @@ angular.module('idodintorfcomApp')
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
+      .when('/privacy', {
+        templateUrl: 'views/privacy.html',
+        controller: 'PrivacyCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

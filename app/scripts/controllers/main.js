@@ -8,7 +8,7 @@
  * Controller of the idodintorfcomApp
  */
 angular.module('idodintorfcomApp')
-  .controller('MainCtrl', function ($scope, $sce, $uibModal) {
+  .controller('MainCtrl', function ($scope, $sce, $uibModal, $mdDialog, $mdMedia) {
     $scope.rsvp = {
       answer: 1
     };
@@ -41,68 +41,74 @@ angular.module('idodintorfcomApp')
       return $sce.trustAsResourceUrl(src);
     };
 
-    $scope.images = [
-        { src: '//splashbase.s3.amazonaws.com/unsplash/regular/photo-1430916273432-273c2db881a0%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3Df047e8284d2fdc1df0fd57a5d294614d'},
-        { src: '//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg'},
-        { src: '//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4'},
-        { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg'},
-        { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg'},
-        { src: '//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg'},
-    ];
-
-    $scope.open = function (source) {
-
-      var modalInstance = $uibModal.open({
-        templateUrl: 'imgModal.html',
+    $scope.open = function(ev, source) {
+      $mdDialog.show({
         controller: 'ImgModalCtrl',
-        size: 'lg',
-        resolve: {
-          source: function () {
-            return source;
-          }
+        templateUrl: 'imgModal.html',
+        parent: angular.element(document.body),
+        targetEvent: ev,
+        clickOutsideToClose:true,
+        fullscreen: false,
+        locals : {
+            source : source
         }
       });
 
-      modalInstance.result.then(function (selectedItem) {
-        $scope.selected = selectedItem;
-      }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
+      $scope.$watch(function() {
+        return $mdMedia('xs') || $mdMedia('sm');
+      }, function(wantsFullScreen) {
+        $scope.customFullscreen = (wantsFullScreen === true);
       });
     };
+
+    // $scope.open = function (source) {
+
+    //   var modalInstance = $uibModal.open({
+    //     templateUrl: 'imgModal.html',
+    //     controller: 'ImgModalCtrl',
+    //     // size: 'lg',
+    //     resolve: {
+    //       source: function () {
+    //         return source;
+    //       }
+    //     }
+    //   });
+
+    //   modalInstance.result.then(function (selectedItem) {
+    //     $scope.selected = selectedItem;
+    //   }, function () {
+    //     $log.info('Modal dismissed at: ' + new Date());
+    //   });
+    // };
 
     $scope.teams = [
       {
         type: "Bridesmaids",
         people: [
           {
-            name: "Brittany",
+            name: "Brittany Palbykin",
             title: "Maid of Honor",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae hic ducimus porro, tenetur illo sunt molestias dolore dignissimos nisi optio asperiores tempore, error, ipsam! Necessitatibus architecto, tenetur molestias laboriosam itaque!"
           },
           {
-            name: "Lindsay",
+            name: "Lindsay Daly",
             title: "Maid of Honor",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus totam dolorum corporis cumque, quas sit, quidem itaque tempora maxime libero, omnis aliquid? Incidunt recusandae, minima ad sunt? Hic, rem?"
           },
           {
-            name: "Marci",
+            name: "Marci Looper",
             title: "Bridesmaid",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nesciunt adipisci qui totam optio voluptates, similique aut quas iusto perspiciatis ullam officia explicabo voluptatibus. Illo necessitatibus porro inventore odio commodi."
           },
           {
-            name: "Ellie",
+            name: "Ellie Morrissey",
             title: "Bridesmaid",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptatem ipsa aperiam commodi, cupiditate vero beatae. Eius iste, alias soluta error rerum beatae, explicabo laboriosam facere libero accusantium voluptas sint."
           },
           {
-            name: "Dana",
+            name: "Dana Shepherd",
             title: "Bridesmaid",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ab expedita eius maxime, excepturi culpa recusandae error. Magni, accusamus, iste. Blanditiis incidunt labore saepe deleniti accusantium, odio explicabo nulla reprehenderit!"
           }
         ]
       },
@@ -110,34 +116,29 @@ angular.module('idodintorfcomApp')
         type: "Groomsmen",
         people: [
           {
-            name: "Adam",
+            name: "Adam Rosamilia",
             title: "Best Man",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, ducimus veritatis maxime! Ducimus quas sed molestias pariatur provident laudantium minus assumenda, perferendis ipsam molestiae voluptatem qui enim maiores animi, ullam?"
           },
           {
-            name: "Scott",
+            name: "Scott Daly",
             title: "Groomsman",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quae, ex fuga, asperiores cupiditate reprehenderit tempore atque. Quae fugit, cumque accusamus eos dicta ex consequuntur impedit nisi dolorum, ipsa dignissimos?"
           },
           {
-            name: "Trevor",
+            name: "Trevor Sears",
             title: "Groomsman",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur saepe impedit eos velit modi aliquam doloribus placeat repellendus quidem quas dolor eligendi quaerat natus sed assumenda tempora voluptates blanditiis, dolore."
           },
           {
-            name: "Billy",
+            name: "Billy Becker",
             title: "Groomsman",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!"
           },
           {
-            name: "Matt",
+            name: "Matt Wittpenn",
             title: "Groomsman",
-            img: "",
-            details: ""
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque est, ducimus repellat aspernatur accusantium quis natus dolorem atque nobis eaque, nam nihil sit accusamus soluta animi eligendi quos, voluptates unde?"
           }
         ]
       }
@@ -145,19 +146,19 @@ angular.module('idodintorfcomApp')
 
     $scope.tips = [
       {
-        icon: 'h-square',
+        icon: 'hotel',
         title: 'Where to Stay',
-        details: "<h4 class='text-center'>Hampton Inn & Suites by Hilton</h4> We have reserved both single and double rooms at the brand new Hampton Inn! Please reach out to Samantha via the contact information below to reserve your room and make sure you mention the Intorf/Palbykin Wedding. <br><br> Phone: (480)-654-4000 <br> Email: Samantha.Lehrer2@hiltion.com.",
+        details: "<h4 class='md-title text-center'><b>Hampton Inn & Suites by Hilton</b></h4><p class='md-title'>We have reserved both single and double rooms at the brand new Hampton Inn! Please reach out to Samantha via the contact information below to reserve your room and make sure you mention the Intorf/Palbykin Wedding. <br><br> Phone: (480)-654-4000 <br> Email: Samantha.Lehrer2@hiltion.com.</p>",
       },
       {
-        icon: 'clock-o',
+        icon: 'timeline',
         title: 'Timeline',
-        details: "<h4 class='text-center'>Coming soon</h4>",
+        details: "<h4 class='md-title text-center'><b>Coming soon</b></h4>",
       },
       {
-        icon: 'bus',
+        icon: 'directions_bus',
         title: 'Transportation',
-        details: "<h4 class='text-center'>Coming soon</h4>",
+        details: "<h4 class='md-title text-center'><b>Coming soon</b></h4>",
       },
     ];
 
@@ -167,11 +168,11 @@ angular.module('idodintorfcomApp')
   });
 
 angular.module('idodintorfcomApp')
-  .controller('ImgModalCtrl', function ($scope, $uibModalInstance, source) {
+  .controller('ImgModalCtrl', function ($scope, $mdDialog, source) {
 
     $scope.source = source;
 
     $scope.close = function () {
-      $uibModalInstance.dismiss('close');
+      $mdDialog.hide();
     };
   });

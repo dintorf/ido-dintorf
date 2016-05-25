@@ -7,6 +7,23 @@
   display:inline;
 }
 
-.img-responsive{
+/*.img-responsive{
 	max-height:100%;
+}*/
+
+.img-fill{
+	height:100%;
+	width:100%;
+}
+
+.img-team{
+	margin-top:-8px;
+}
+
+.text-white{
+	color: white;
+}
+
+.material-icons.md-36{
+	font-size: 36px;
 }
