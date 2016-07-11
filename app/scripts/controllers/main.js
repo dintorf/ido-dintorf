@@ -8,7 +8,7 @@
  * Controller of the idodintorfcomApp
  */
 angular.module('idodintorfcomApp')
-  .controller('MainCtrl', function ($scope, $sce, $uibModal, $mdDialog, $mdMedia) {
+  .controller('MainCtrl', function ($scope, $sce, $uibModal, $mdDialog, $mdMedia, $http) {
     $scope.rsvp = {
       answer: 1
     };
@@ -27,10 +27,16 @@ angular.module('idodintorfcomApp')
       }
     });
 
+    $scope.aws = {};
+
+    $http.get('/scripts/config.json').then(function(response) {
+      $scope.aws = response.data;
+    });
+
     $scope.send = function(isValid){
       console.log(isValid, $scope.rsvp);
       if(isValid){
-        var ses = new AWS.SES({accessKeyId: 'AKIAIOP2K5LK67NYLK2Q', secretAccessKey: '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', region: 'us-west-2'});
+        var ses = new AWS.SES({accessKeyId: $scope.aws.accessKey, secretAccessKey: $scope.aws.secretKey, region: 'us-west-2'});
         var msg = $scope.formatMsg();
         var params = {
           Destination: { /* required */
@@ -204,7 +210,7 @@ angular.module('idodintorfcomApp')
             details: "<h4 class='md-title text-center'><b>Hampton Inn & Suites</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
           },
           {
-            details: "<h4 class='md-title text-center'><b>Marriot Residence Inn</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
+            details: "<h4 class='md-title text-center'><b>Marriott Residence Inn</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
           }
         ]
       },

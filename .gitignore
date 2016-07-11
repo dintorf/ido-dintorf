@@ -5,3 +5,4 @@ dist
 bower_components
 .DS_Store
 ido_dintorf.sublime-project
+app/scripts/config.json
