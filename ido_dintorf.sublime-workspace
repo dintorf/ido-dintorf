@@ -247,8 +247,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 343.0,
-		"last_filter": "push",
+		"height": 275.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -512,7 +512,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 601.0
+		"width": 673.0
 	},
 	"console":
 	{
@@ -860,7 +860,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -938,8 +938,8 @@
 						"selection":
 						[
 							[
-								4207,
-								4213
+								3213,
+								3213
 							]
 						],
 						"settings":
@@ -950,10 +950,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1141.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -969,8 +969,8 @@
 						"selection":
 						[
 							[
-								6596,
-								6596
+								5844,
+								5844
 							]
 						],
 						"settings":
@@ -981,10 +981,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2358.0,
+						"translation.y": 2317.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1013,7 +1013,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1041,10 +1041,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3677.0,
+						"translation.y": 520.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1105,7 +1105,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]

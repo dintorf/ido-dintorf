@@ -61,16 +61,20 @@
     <div layout="column">
         <div flex>
             <h2 class="text-center text-primary">The Team</h2>
-            <hr>
         </div>
         <div class="container" layout="row" layout-align="space-around start" flex>
-            <md-list ng-repeat="team in teams">
-              <h2 class="md-headline text-center text-primary">{{ team.type }}</h2>
-              <md-list-item ng-repeat="member in team.people">
-                <div class="md-list-item-text" layout="column">
-                  <h3 class="md-title">{{ member.name }} | {{ member.title }}</h3>
-                  <p>{{ member.details }}</p>
-                </div>
+            <md-list ng-repeat="team in teams" flex>
+              <md-list-item ng-repeat="member in team.people" layout-align="end center" ng-if="team.type == 'Bridesmaids'">
+                <span class="text-right" layout="column">
+                  <h1 class="cursive">{{ member.name }}</h1>
+                  <h4>{{ member.title }}</h4>
+                </span>
+              </md-list-item>
+              <md-list-item ng-repeat="member in team.people" layout-align="start center" ng-if="team.type == 'Groomsmen'">
+                <span class="text-left" layout="column">
+                  <h1 class="cursive">{{ member.name }}</h1>
+                  <h4>{{ member.title }}</h4>
+                </span>
               </md-list-item>
             </md-list>
         </div>
@@ -85,12 +89,12 @@
             </div>
         </div>
     </div>
-    <div layout-gt-sm="row" layout-align="space-around start">
-        <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}">
-            <div class="feature">
-                <md-icon class="md-36 text-white" data-wow-delay=".3s">{{tip.icon}}</md-icon>
-                <h3 class="md-headline"><b>{{tip.title}}</b></h3>
-                <p class="text-muted text-center" ng-bind-html="tip.details"></p>
+    <div layout-gt-sm="column">
+        <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}" layout="column">
+            <md-icon class="md-36 text-white" data-wow-delay=".3s">{{tip.icon}}</md-icon>
+            <h3 class="md-headline"><b>{{tip.title}}</b></h3>
+            <div layout-gt-sm="row">
+                <div class="text-muted feature" ng-repeat="item in tip.items" ng-bind-html="item.details"></div>
             </div>
         </div>
     </div>
@@ -101,63 +105,50 @@
             <div flex class="text-center">
                 <h2 class="margin-top-0 text-primary wow fadeIn">RSVP</h2>
                 <hr class="primary">
-                <p>Tell us that you're coming to the big event!</p>
+                <h2 ng-if="!rsvpSent">Tell us that you're coming to the big event!</h2>
+                <h2 ng-if="rsvpSent">Thank you for your RSVP!</h2>
             </div>
             <div flex class="text-center">
                 <md-content layout-padding>
-	                <div>
-	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$isValid)" class="contact-form row" novalidate>
-	                        <div layout-gt-sm="row">
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Full Name</label>
-		                            <input name="name" ng-model="rsvp.name">
-	                            </md-input-container>
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Email</label>
-		                            <input name="email" type="email" ng-model="rsvp.email">
-	                            </md-input-container>
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Phone</label>
-		                            <input name="phone" type="phone" ng-model="rsvp.phone">
-	                            </md-input-container>
-	                        </div>
-	                        <div layout-gt-sm="row" ng-if="rsvp.answer == 2" class="wow fadeIn">
-	                            <span class="text-primary" flex-gt-sm>+1 Details</span>
-	                        </div>
-	                        <div layout-gt-sm="row" ng-if="rsvp.answer == 2" class="wow fadeIn">
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Name</label>
-		                            <input name="plus1name" ng-model="rsvp.plus1.name">
-	                            </md-input-container>
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Email</label>
-		                            <input name="plus1email" type="email" ng-model="rsvp.plus1.email">
-	                            </md-input-container>
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Phone</label>
-		                            <input name="plus1phone" type="phone" ng-model="rsvp.plus1.phone">
-	                            </md-input-container>
-	                        </div>
-	                        <div layout-gt-sm="row" ng-if="rsvp.answer != 2" class="wow fadeIn">
-	                            <span class="text-primary" flex-gt-sm>
-	                            	If you have a +1 be sure to select the middle option
-	                            	<br />
-	                            	<i class="fa fa-arrow-down hidden-xs"></i>
-	                            </span>
-	                        </div>
-	                        <md-radio-group ng-model="rsvp.answer">
-		                        <div layout-gt-sm="row">
-		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="1" class="md-accent md-hue-1"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
-		                            </md-input-container>
-		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small> </md-radio-button>
-		                            </md-input-container>
-		                            <md-input-container class="md-block" flex-gt-sm>
-		                            	<md-radio-button value="0" class="md-accent md-hue-1"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
-		                            </md-input-container>
-		                        </div>
-	                        </md-radio-group>
+	                <div ng-if="!rsvpSent">
+	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$valid)" class="contact-form" novalidate>
+                            <div layout="row">
+                                <md-radio-group ng-model="rsvp.answer" flex>
+                                    <div layout="column" layout-align="space-around center">
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <md-radio-button value="1" class="md-accent md-hue-1"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
+                                        </md-input-container>
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small> </md-radio-button>
+                                        </md-input-container>
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <md-radio-button value="0" class="md-accent md-hue-1"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
+                                        </md-input-container>
+                                    </div>
+                                </md-radio-group>
+                                <div flex layout="column" layout-align="space-around center">
+        	                        <div flex layout="row" layout-align="space-around center">
+        	                            <md-input-container class="md-block">
+        		                            <label>Full Name</label>
+        		                            <input name="name" ng-model="rsvp.name" required>
+        	                            </md-input-container>
+        	                            <md-input-container class="md-block">
+        		                            <label>Email</label>
+        		                            <input name="email" type="email" ng-model="rsvp.email" required>
+        	                            </md-input-container>
+        	                        </div>
+        	                        <div ng-if="rsvp.answer == 2" class="wow fadeIn" flex layout="row" layout-align="space-around center">
+        	                            <md-input-container class="md-block">
+        		                            <label>Full Name</label>
+        		                            <input name="plus1name" ng-model="rsvp.plus1.name" required>
+        	                            </md-input-container>
+        	                            <md-input-container class="md-block">
+        		                            <label>Email</label>
+        		                            <input name="plus1email" type="email" ng-model="rsvp.plus1.email" required>
+        	                            </md-input-container>
+        	                        </div>
+                                </div>
+                            </div>
 	                        <div layout-gt-sm="row">
 	                            <md-input-container class="md-block" flex-gt-sm>
 		                            <label>Note <small>(optional)</small></label>

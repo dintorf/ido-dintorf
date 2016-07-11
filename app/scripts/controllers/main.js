@@ -13,6 +13,8 @@ angular.module('idodintorfcomApp')
       answer: 1
     };
 
+    $scope.rsvpSent = false;
+
     $scope.theDay = moment('11/05/2016');
     $scope.save_the_date = $scope.theDay.format('MM.DD.YYYY');
     $scope.today = moment(moment().format('MM/DD/YYYY'));
@@ -27,7 +29,53 @@ angular.module('idodintorfcomApp')
 
     $scope.send = function(isValid){
       console.log(isValid, $scope.rsvp);
+      if(isValid){
+        var ses = new AWS.SES({accessKeyId: 'AKIAIOP2K5LK67NYLK2Q', secretAccessKey: '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', region: 'us-west-2'});
+        var msg = $scope.formatMsg();
+        var params = {
+          Destination: { /* required */
+            ToAddresses: [
+              'dintorf@gmail.com'//,
+              // 'danielle.palbykin@gmail.com'
+              /* more items */
+            ]
+          },
+          Message: { /* required */
+            Body: { /* required */
+              Text: {
+                Data: msg /* required */
+              }
+            },
+            Subject: { /* required */
+              Data: 'Wedding RSVP' /* required */
+            }
+          },
+          Source: 'Intorf/Palbykin Wedding <dylan@dintorf.com>' /* required */
+        };
+
+        ses.sendEmail(params, function(err, data) {
+          if (err) $scope.rsvpError = err; // an error occurred
+          else{     
+            $scope.$apply(function(){
+              $scope.rsvpSent = true;       // successful response
+            });
+          }
+        });
+      }
     };
+
+    $scope.formatMsg = function(){
+      var msg = "Name: " + $scope.rsvp.name + "\n";
+      msg += "Email: " + $scope.rsvp.email + "\n";
+      if($scope.rsvp.plus1){
+        msg += "Plus1 Name: " + $scope.rsvp.plus1.name + "\n";
+        msg += "Plus1 Email: " + $scope.rsvp.plus1.email + "\n";
+      }
+      if($scope.rsvp.note){
+        msg += "Note: " + $scope.rsvp.note;
+      }
+      return msg;
+    }
 
     $('a.page-scroll').bind('click', function(event) {
         var $ele = $(this);
@@ -126,6 +174,11 @@ angular.module('idodintorfcomApp')
             details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quae, ex fuga, asperiores cupiditate reprehenderit tempore atque. Quae fugit, cumque accusamus eos dicta ex consequuntur impedit nisi dolorum, ipsa dignissimos?"
           },
           {
+            name: "Matt Wittpenn",
+            title: "Groomsman",
+            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque est, ducimus repellat aspernatur accusantium quis natus dolorem atque nobis eaque, nam nihil sit accusamus soluta animi eligendi quos, voluptates unde?"
+          },
+          {
             name: "Trevor Sears",
             title: "Groomsman",
             details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur saepe impedit eos velit modi aliquam doloribus placeat repellendus quidem quas dolor eligendi quaerat natus sed assumenda tempora voluptates blanditiis, dolore."
@@ -134,11 +187,6 @@ angular.module('idodintorfcomApp')
             name: "Billy Becker",
             title: "Groomsman",
             details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!"
-          },
-          {
-            name: "Matt Wittpenn",
-            title: "Groomsman",
-            details: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque est, ducimus repellat aspernatur accusantium quis natus dolorem atque nobis eaque, nam nihil sit accusamus soluta animi eligendi quos, voluptates unde?"
           }
         ]
       }
@@ -148,17 +196,35 @@ angular.module('idodintorfcomApp')
       {
         icon: 'hotel',
         title: 'Where to Stay',
-        details: "<h4 class='md-title text-center'><b>Hampton Inn & Suites by Hilton</b></h4><p class='md-title'>We have reserved both single and double rooms at the brand new Hampton Inn! Please reach out to Samantha via the contact information below to reserve your room and make sure you mention the Intorf/Palbykin Wedding. <br><br> Phone: (480)-654-4000 <br> Email: Samantha.Lehrer2@hiltion.com.</p>",
+        items: [
+          {
+            details: "<h4 class='md-title text-center'><b>Hyatt Place</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
+          },
+          {
+            details: "<h4 class='md-title text-center'><b>Hampton Inn & Suites</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
+          },
+          {
+            details: "<h4 class='md-title text-center'><b>Marriot Residence Inn</b></h4><p class='md-title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur commodi dolores, ut in ducimus doloremque dolor cumque, natus minima illum quae veniam eaque velit minus dicta tempora eum accusantium asperiores!</p><br/>",
+          }
+        ]
       },
       {
         icon: 'timeline',
         title: 'Timeline',
-        details: "<h4 class='md-title text-center'><b>Coming soon</b></h4>",
+        items: [
+          {
+            details: "<h4 class='md-title text-center'><b>Coming soon</b></h4><p></p><br/>",
+          }
+        ]
       },
       {
         icon: 'directions_bus',
         title: 'Transportation',
-        details: "<h4 class='md-title text-center'><b>Coming soon</b></h4>",
+        items: [
+          {
+            details: "<h4 class='md-title text-center'><b>Coming soon</b></h4><p></p><br/>",
+          }
+        ]
       },
     ];
 
