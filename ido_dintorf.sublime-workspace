@@ -163,8 +163,24 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 6749,
+				"buffer_size": 6757,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/routes.js",
+			"settings":
+			{
+				"buffer_size": 4114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/theme.js",
+			"settings":
+			{
+				"buffer_size": 678,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -179,7 +195,23 @@
 			"file": "app/views/main.html",
 			"settings":
 			{
-				"buffer_size": 12674,
+				"buffer_size": 13032,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dist/views/privacy.html",
+			"settings":
+			{
+				"buffer_size": 3337,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/filters/range.js",
+			"settings":
+			{
+				"buffer_size": 244,
 				"line_ending": "Unix"
 			}
 		},
@@ -187,7 +219,7 @@
 			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 6984,
+				"buffer_size": 14410,
 				"line_ending": "Unix"
 			}
 		},
@@ -195,7 +227,7 @@
 			"file": "app/styles/main.css",
 			"settings":
 			{
-				"buffer_size": 279,
+				"buffer_size": 491,
 				"line_ending": "Unix"
 			}
 		},
@@ -203,7 +235,7 @@
 			"file": "app/styles/theme.css",
 			"settings":
 			{
-				"buffer_size": 10238,
+				"buffer_size": 10278,
 				"line_ending": "Windows"
 			}
 		},
@@ -537,15 +569,16 @@
 	[
 		"/Users/dintorf/Developer/ido.dintorf.com",
 		"/Users/dintorf/Developer/ido.dintorf.com/app",
-		"/Users/dintorf/Developer/ido.dintorf.com/app/images",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts",
-		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/controllers",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/filters",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/views",
-		"/Users/dintorf/Developer/ido.dintorf.com/bower_components",
 		"/Users/dintorf/Developer/ido.dintorf.com/dist"
 	],
 	"file_history":
 	[
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/config.json",
+		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/directives/compile.js",
+		"/Users/dintorf/Developer/ido.dintorf.com/.gitignore",
 		"/Users/dintorf/Developer/ido.dintorf.com/bower_components/angular-timer/dist/assets/js/angular-timer-all.min.js",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/scripts/services/instagram.js",
 		"/Users/dintorf/Developer/ido.dintorf.com/.tmp/styles/main.css",
@@ -560,7 +593,6 @@
 		"/Users/dintorf/Developer/ido.dintorf.com/dist/index.html",
 		"/Users/dintorf/Developer/ido.dintorf.com/app/sample.html",
 		"/Users/dintorf/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/Users/dintorf/Developer/ido.dintorf.com/.gitignore",
 		"/Users/dintorf/Developer/ido.dintorf.com/bower.json",
 		"/Users/dintorf/Downloads/landingzero_334/sample.html",
 		"/Users/dintorf/Desktop/add_project2.php",
@@ -671,13 +703,11 @@
 		"/Users/dintorf/Developer/wisecode/SECURE/includes/user/menustyle.asp",
 		"/Users/dintorf/Developer/wisecode/Php/includes/client/Category.php",
 		"/Users/dintorf/Developer/wisecode/SECURE/client/CLIENTWELCOME.ASP",
-		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Service/Calendar.php",
-		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Client.php",
-		"/Users/dintorf/Developer/wisecode/Php/Google/php-client/src/Google/Client.php"
+		"/Users/dintorf/Developer/wisecode/Php/Google/google-api-php-client/src/Google/Service/Calendar.php"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
@@ -695,6 +725,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sha",
+			"md-toolbar",
+			"modal",
+			"md-primary",
+			"Send",
+			"header",
+			"plus1",
+			"rsvp =",
+			"<li><b>",
+			"h2",
+			"h4",
+			"md-headline",
+			"text-left",
+			"h4",
+			"md-headline ",
+			"h2",
+			"4",
+			"h1",
+			"h2",
+			"h",
+			"D&D",
+			"rsvp.plu",
+			"md-",
+			"md-icon",
+			"using",
+			"'",
+			"\"",
+			".",
+			"\"",
+			"button",
+			"$http",
 			"footer",
 			"open(",
 			"modal",
@@ -791,38 +852,7 @@
 			"qaptcha",
 			"Qaptcha",
 			"log.",
-			"magic",
-			"result",
-			"<style",
-			"cssClass",
-			"calendar\"",
-			"event",
-			"!=",
-			"events",
-			"save",
-			"updateOccurrence",
-			"excludeDays",
-			"weekends",
-			"updateOccurrenceDates",
-			"twilio",
-			"GetTodoListJson",
-			"todo",
-			"ng-control",
-			"att",
-			"notes",
-			"preparenotefordisplay",
-			"angular.",
-			"replaceChr",
-			"chr(1)",
-			"notesjson",
-			"rendernotesjson",
-			"addNote",
-			"note",
-			"send",
-			"note",
-			"var name =",
-			"gritter-danger",
-			"Error"
+			"magic"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -860,7 +890,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -869,15 +899,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6749,
+						"buffer_size": 6757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								973,
-								973
+								6122,
+								6122
 							]
 						],
 						"settings":
@@ -888,14 +918,76 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1751.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "app/scripts/routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2729,
+								2729
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Piatto Light.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/scripts/theme.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Piatto Light.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "Gruntfile.js",
 					"semi_transient": false,
 					"settings":
@@ -922,24 +1014,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "app/views/main.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12674,
+						"buffer_size": 13032,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3213,
-								3213
+								12368,
+								12368
 							]
 						],
 						"settings":
@@ -950,27 +1042,86 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3477.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/scripts/controllers/main.js",
+					"buffer": 5,
+					"file": "dist/views/privacy.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6984,
+						"buffer_size": 3337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5844,
-								5844
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Piatto Light.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/scripts/filters/range.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Piatto Light.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/scripts/controllers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1279,
+								1282
 							]
 						],
 						"settings":
@@ -981,27 +1132,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2317.0,
+						"translation.y": 582.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 8,
 					"file": "app/styles/main.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 279,
+						"buffer_size": 491,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								176,
+								177
 							]
 						],
 						"settings":
@@ -1013,24 +1164,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 9,
 					"file": "app/styles/theme.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10238,
+						"buffer_size": 10278,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4203,
-								4203
+								1409,
+								1409
 							]
 						],
 						"settings":
@@ -1041,14 +1192,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 520.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 10,
 					"file": "app/views/privacy.html",
 					"semi_transient": false,
 					"settings":
@@ -1074,11 +1225,11 @@
 						"translation.y": 869.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 11,
 					"file": "app/scripts/app.js",
 					"semi_transient": false,
 					"settings":
@@ -1090,8 +1241,8 @@
 						"selection":
 						[
 							[
-								549,
-								555
+								609,
+								609
 							]
 						],
 						"settings":
@@ -1102,10 +1253,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1167,6 +1318,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"theme.js",
+				"app/scripts/theme.js"
+			],
 			[
 				"angular-timerall",
 				"bower_components/angular-timer/dist/assets/js/angular-timer-all.min.js"
@@ -1674,10 +1829,6 @@
 			[
 				"fullcalendar.js",
 				"wisecode/SECURE/javascript/fullcalendar.js"
-			],
-			[
-				"timezonemodel",
-				"wisecode/SECURE/includes/calendar/timeZoneModel.asp"
 			]
 		],
 		"width": 0.0
@@ -1716,7 +1867,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 306.0,
+	"side_bar_width": 380.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

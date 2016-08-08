@@ -21,9 +21,29 @@
 }
 
 .text-white{
-	color: white;
+	color: white !important;
 }
 
 .material-icons.md-36{
 	font-size: 36px;
+}
+
+.material-icons.md-48{
+	font-size: 48px;
+}
+
+.fa-ul{
+	margin-left:0px;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.margin-top-300{
+	margin-top:200px;
+}
+
+.visible{
+	visibility: visible !important;
 }

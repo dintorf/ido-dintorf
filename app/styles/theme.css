@@ -131,6 +131,10 @@ footer {
     padding: 0;
 }
 
+.no-top-padding {
+    padding-top:0;
+}
+
 .navbar-default {
     border-color: rgba(35,35,35,.05);
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;

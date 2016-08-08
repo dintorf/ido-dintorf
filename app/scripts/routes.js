@@ -61,19 +61,6 @@ angular.module('idodintorfcomApp')
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-
-      .whenAuthenticated('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
-      })
-      .whenAuthenticated('/account', {
-        templateUrl: 'views/account.html',
-        controller: 'AccountCtrl'
-      })
       .when('/privacy', {
         templateUrl: 'views/privacy.html',
         controller: 'PrivacyCtrl'

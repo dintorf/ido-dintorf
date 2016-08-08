@@ -1,17 +1,18 @@
 <header id="top">
     <div class="header-content">
         <div class="inner">
+            <div class="margin-top-300">&nbsp;</div>
             <h1 class="cursive">Dylan & Danielle</h1>
-            <h3>To have and to hold</h3>
-            <h3>{{save_the_date}}</h3>
-            <h3>{{countdown}}</h3>
+            <h2 class='md-display-2'>{{save_the_date}}</h2>
+            <h2>{{countdown}}</h2>
             <hr>
-            <a href="#story" class="btn btn-primary btn-xl page-scroll">Our Story</a>
+            <!-- <a href="#story" class="btn btn-primary btn-xl page-scroll">Our Story</a> -->
+            <a href="#photos" class="btn page-scroll text-white"><i class="fa fa-chevron-down fa-3x wow pulse animated visible" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"></i></a>
             <!-- <h3>Coming Soon!</h3> -->
         </div>
     </div>
 </header>
-<section id="story">
+<!-- <section id="story">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
@@ -23,8 +24,8 @@
             </div>
         </div>
     </div>
-</section>
-<section id="photos" class="no-padding">
+</section> -->
+<section id="photos">
     <div class="container-fluid">
         <md-grid-list
             md-cols-xs="3" md-cols-sm="3" md-cols-md="6" md-cols-gt-md="6"
@@ -32,46 +33,46 @@
             md-gutter="12px" md-gutter-gt-sm="8px" >
             <md-grid-tile
                 md-rowspan="2" md-colspan="1" md-colspan-sm="1">
-              <img src="images/DD_Port1.jpg" ng-click="open($event, 'images/DD_Port1.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Port1.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
             <md-grid-tile
                 md-rowspan="1" md-colspan="2">
-              <img src="images/DD_Land1.jpg" ng-click="open($event, 'images/DD_Land1.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Land1.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
             <md-grid-tile
                 md-rowspan="1" md-colspan="2">
-              <img src="images/DD_Land5.jpg" ng-click="open($event, 'images/DD_Land5.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Land5.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
             <md-grid-tile
                 md-rowspan="2" md-colspan="1" md-colspan-sm="1">
-              <img src="images/DD_Port2.jpg" ng-click="open($event, 'images/DD_Port2.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Port2.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
             <md-grid-tile
                 md-rowspan="1" md-colspan="2">
-              <img src="images/DD_Land4.jpg" ng-click="open($event, 'images/DD_Land4.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Land4.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
             <md-grid-tile
                 md-rowspan="1" md-colspan="2">
-              <img src="images/DD_Land3.jpg" ng-click="open($event, 'images/DD_Land3.jpg')" class="img-responsive img-fill" alt="D&D Photoshoot">
+              <img src="images/DD_Land3.jpg" ng-click="open($event)" class="img-responsive img-fill" alt="D&D Photoshoot">
             </md-grid-tile>
         </md-grid-list>
     </div>
 </section>
-<section class="container-fluid" id="team">
+<section class="container-fluid no-top-padding" id="team">
     <div layout="column">
         <div flex>
-            <h2 class="text-center text-primary">The Team</h2>
+            <h1 class="text-center text-primary md-display-4">The Team</h1>
         </div>
         <div class="container" layout="row" layout-align="space-around start" flex>
             <md-list ng-repeat="team in teams" flex>
               <md-list-item ng-repeat="member in team.people" layout-align="end center" ng-if="team.type == 'Bridesmaids'">
-                <span class="text-right" layout="column">
+                <span class="text-right text-muted" layout="column">
                   <h1 class="cursive">{{ member.name }}</h1>
                   <h4>{{ member.title }}</h4>
                 </span>
               </md-list-item>
               <md-list-item ng-repeat="member in team.people" layout-align="start center" ng-if="team.type == 'Groomsmen'">
-                <span class="text-left" layout="column">
+                <span class="text-left text-muted" layout="column">
                   <h1 class="cursive">{{ member.name }}</h1>
                   <h4>{{ member.title }}</h4>
                 </span>
@@ -84,17 +85,19 @@
     <div class="container">
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
-                <h2 class="margin-top-0 text-primary">Big Day Tips</h2>
+                <h1 class="margin-top-0 text-primary md-display-4">Big Day Tips</h1>
                 <hr class="primary">
             </div>
         </div>
     </div>
     <div layout-gt-sm="column">
         <div class="text-center wow" flex-gt-sm ng-repeat="tip in tips track by $index" ng-class="{'fadeInLeft': $index === 0, 'fadeInUp': $index === 1, 'fadeInRight': $index === 2}" layout="column">
+            <br />
+            <br />
             <md-icon class="md-36 text-white" data-wow-delay=".3s">{{tip.icon}}</md-icon>
-            <h3 class="md-headline"><b>{{tip.title}}</b></h3>
+            <h1 class="uppercase"><b>{{tip.title}}</b></h1>
             <div layout-gt-sm="row">
-                <div class="text-muted feature" ng-repeat="item in tip.items" ng-bind-html="item.details"></div>
+                <div class="text-muted feature" ng-repeat="item in tip.items" compile="item.details"></div>
             </div>
         </div>
     </div>
@@ -103,63 +106,64 @@
     <div class="container">
         <div layout="column">
             <div flex class="text-center">
-                <h2 class="margin-top-0 text-primary wow fadeIn">RSVP</h2>
+                <h1 class="margin-top-0 text-primary md-display-4 wow fadeIn">RSVP</h1>
                 <hr class="primary">
-                <h2 ng-if="!rsvpSent">Tell us that you're coming to the big event!</h2>
-                <h2 ng-if="rsvpSent">Thank you for your RSVP!</h2>
+                <h1 ng-if="!rsvpSent" class='cursive text-muted'>Tell us that you're coming to the big event!</h1>
+                <h1 ng-if="rsvpSent" class='cursive text-muted'>Thank you for your RSVP!</h1>
             </div>
             <div flex class="text-center">
                 <md-content layout-padding>
 	                <div ng-if="!rsvpSent">
 	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$valid)" class="contact-form" novalidate>
-                            <div layout="row">
+                            <div layout="column">
                                 <md-radio-group ng-model="rsvp.answer" flex>
-                                    <div layout="column" layout-align="space-around center">
+                                    <div layout="row" layout-align="space-around center">
                                         <md-input-container class="md-block" flex-gt-sm>
                                             <md-radio-button value="1" class="md-accent md-hue-1"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
                                         </md-input-container>
                                         <md-input-container class="md-block" flex-gt-sm>
-                                            <md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +1</small> </md-radio-button>
+                                            <md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +more</small> </md-radio-button>
                                         </md-input-container>
                                         <md-input-container class="md-block" flex-gt-sm>
                                             <md-radio-button value="0" class="md-accent md-hue-1"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
                                         </md-input-container>
                                     </div>
                                 </md-radio-group>
-                                <div flex layout="column" layout-align="space-around center">
-        	                        <div flex layout="row" layout-align="space-around center">
-        	                            <md-input-container class="md-block">
+                                <div flex layout="column" ng-init="rsvp.number = 1">
+                                    <div flex layout="row" ng-if="rsvp.answer == 2">
+                                        <div flex></div>
+                                        <md-input-container class="md-block" flex>
+                                            <label>Number of People</label>
+                                            <input type="number" name="numPeople" ng-model="rsvp.number" min="1" required>
+                                        </md-input-container>
+                                        <div flex></div>
+                                    </div>
+        	                        <div flex layout="row" ng-repeat="person in rsvp.people">
+        	                            <md-input-container class="md-block" flex>
         		                            <label>Full Name</label>
-        		                            <input name="name" ng-model="rsvp.name" required>
+        		                            <input name="name" ng-model="person.name" required>
         	                            </md-input-container>
-        	                            <md-input-container class="md-block">
+                                        <div flex="5" hide-xs hide-sm>
+                                          <!-- Spacer //-->
+                                        </div>
+        	                            <md-input-container class="md-block" flex>
         		                            <label>Email</label>
-        		                            <input name="email" type="email" ng-model="rsvp.email" required>
+        		                            <input name="email" type="email" ng-model="person.email" required>
         	                            </md-input-container>
         	                        </div>
-        	                        <div ng-if="rsvp.answer == 2" class="wow fadeIn" flex layout="row" layout-align="space-around center">
-        	                            <md-input-container class="md-block">
-        		                            <label>Full Name</label>
-        		                            <input name="plus1name" ng-model="rsvp.plus1.name" required>
-        	                            </md-input-container>
-        	                            <md-input-container class="md-block">
-        		                            <label>Email</label>
-        		                            <input name="plus1email" type="email" ng-model="rsvp.plus1.email" required>
-        	                            </md-input-container>
-        	                        </div>
+                                    <div flex>
+                                        <md-input-container class="md-block">
+                                            <label>Note <small>(optional)</small></label>
+                                            <textarea ng-model="rsvp.note" columns="1" md-maxlength="150" rows="5"></textarea>
+                                        </md-input-container>
+                                    </div>
+                                    <div flex>
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <md-button type="submit" name="submit" class="md-raised md-accent md-hue-1 text-white">Send <i class="fa fa-arrow-right"></i></md-button>
+                                        </md-input-container>
+                                    </div>
                                 </div>
                             </div>
-	                        <div layout-gt-sm="row">
-	                            <md-input-container class="md-block" flex-gt-sm>
-		                            <label>Note <small>(optional)</small></label>
-		                            <textarea ng-model="rsvp.note" columns="1" md-maxlength="150" rows="5"></textarea>
-	                            </md-input-container>
-	                        </div>
-	                        <div layout-gt-sm="row">
-	                            <md-input-container class="md-block" flex-gt-sm>
-	                            	<md-button type="submit" name="submit" class="md-raised md-primary">Send <i class="fa fa-arrow-right"></i></md-button>
-	                            </md-input-container>
-	                        </div>
 	                    </form>
 	                </div>
                 </md-content>
@@ -171,7 +175,7 @@
     <div class="container">
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
-                <h2 class="margin-top-0 text-primary">Registry</h2>
+                <h1 class="margin-top-0 text-primary md-display-4">Registry</h1>
                 <hr class="primary">
             </div>
         </div>
@@ -180,25 +184,25 @@
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
                 <div class="text-muted">
-                    <p class="md-title">We've chosen to register with Zola, an easy-to-use registry site that enables us to register for the gifts we want, all in one place. If you'd like to give us a gift on Zola, click the logo below!</p>
+                    <p class="md-headline">We've chosen to register with Zola, an easy-to-use registry site that enables us to register for the gifts we want, all in one place. If you'd like to give us a gift on Zola, click the logo below!</p>
                     <div class="help-block"></div>
                     <a href="https://www.zola.com/registry/dintorf" target="_blank"><img class="wow fadeInUp thumbnail" data-wow-delay=".3s" src="/images/zola.png" width="150"/></a>
                 </div>
             </div>
         </div>
     </div>
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="container-fluid md-title text-muted">
             <h4>Social Media</h4>
             <div layout-gt-sm="row">
-                <!-- <div flex-gt-sm style="margin-right:10px">
+                <div flex-gt-sm style="margin-right:10px">
                     <h4>Instagram</h4>
                     <iframe src="http://snapwidget.com/sc/?u=ZGludG9yZnxpbnwyNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=010116" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:250px"></iframe>
                 </div>
                 <div flex-gt-sm style="margin-right:10px" align="center">
                     <h4>Tweets</h4>
                     <a class="twitter-timeline" href="https://twitter.com/hashtag/DDNov52016" data-widget-id="683119156724563969">#DDNov52016 Tweets</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div> -->
+                </div>
                 <div flex-gt-sm>
                     <h4>Facebook</h4>
                     <div class="fb-comments" data-href="http://ido.dintorf.com" data-numposts="5" data-colorscheme="dark" data-order-by="reverse_time" data-width="100%"></div>
@@ -206,16 +210,16 @@
             </div>
             <br/>
         </div>
-    </footer>
+    </footer> -->
 </section>
 <script type="text/ng-template" id="imgModal.html">
     <md-dialog aria-label="Gallery"  ng-cloak>
       <form>
         <md-toolbar>
-          <div class="md-toolbar-tools">
-            <h2>Gallery</h2>
+          <div class="md-toolbar-tools text-white">
+            <h1>Gallery</h1>
             <span flex></span>
-            <md-button class="md-icon-button" ng-click="close()">
+            <md-button class="md-icon-button text-white" ng-click="close()">
               <i class="fa fa-times fa-2x"></i>
             </md-button>
           </div>
