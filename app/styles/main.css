@@ -47,3 +47,7 @@
 .visible{
 	visibility: visible !important;
 }
+
+md-input-container label{
+    color:#333 !important;
+}

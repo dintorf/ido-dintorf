@@ -27,7 +27,7 @@ angular.module('idodintorfcomApp', [
         '200': 'ffffff', 
         '300': 'ffffff',
         '400': '9d9ebc', 
-        '500': 'b2c1ba',
+        '500': '4f5275',
         '600': 'f2edea', 
         '700': 'ffffff', 
         '800': 'ffffff',

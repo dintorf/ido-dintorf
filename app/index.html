@@ -5,6 +5,12 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <!--[if IE]>
+        <script type='text/javascript'>window.location.href='http://ido.dintorf.com/404.html';</script>
+    <![endif]-->
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -18,7 +24,7 @@
     <!-- endcdn -->
 
     <!-- Angular Material -->
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.9/angular-material.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- End Angular Material -->
 
@@ -45,10 +51,6 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
 
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -119,6 +121,7 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/aws-sdk/dist/aws-sdk.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -128,7 +131,7 @@
     <!-- endcdn -->
 
     <!-- Angular Material -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.9/angular-material.min.js"></script>
     <!-- End Angular Material -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
@@ -144,7 +147,6 @@
         <script src="scripts/directives/compile.js"></script>
         <script src="scripts/routes.js"></script>
         <script src="scripts/theme.js"></script>
-        <script src="scripts/aws-sdk-2.4.6.min.js"></script>
         <script src="scripts/controllers/privacy.js"></script>
         <!-- endbuild -->
 

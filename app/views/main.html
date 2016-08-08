@@ -2,12 +2,12 @@
     <div class="header-content">
         <div class="inner">
             <div class="margin-top-300">&nbsp;</div>
-            <h1 class="cursive">Dylan & Danielle</h1>
+            <h1 class="cursive">Danielle & Dylan</h1>
             <h2 class='md-display-2'>{{save_the_date}}</h2>
             <h2>{{countdown}}</h2>
             <hr>
-            <!-- <a href="#story" class="btn btn-primary btn-xl page-scroll">Our Story</a> -->
             <a href="#photos" class="btn page-scroll text-white"><i class="fa fa-chevron-down fa-3x wow pulse animated visible" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"></i></a>
+            
             <!-- <h3>Coming Soon!</h3> -->
         </div>
     </div>
@@ -61,7 +61,8 @@
 <section class="container-fluid no-top-padding" id="team">
     <div layout="column">
         <div flex>
-            <h1 class="text-center text-primary md-display-4">The Team</h1>
+            <h1 class="text-center text-primary md-display-4" hide-sm hide-xs>The Team</h1>
+            <h1 class="text-center text-primary md-display-3" hide-gt-sm>The Team</h1>
         </div>
         <div class="container" layout="row" layout-align="space-around start" flex>
             <md-list ng-repeat="team in teams" flex>
@@ -85,7 +86,8 @@
     <div class="container">
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
-                <h1 class="margin-top-0 text-primary md-display-4">Big Day Tips</h1>
+                <h1 class="margin-top-0 text-primary md-display-4" hide-sm hide-xs>Big Day Tips</h1>
+                <h1 class="margin-top-0 text-primary md-display-3" hide-gt-sm>Big Day Tips</h1>
                 <hr class="primary">
             </div>
         </div>
@@ -106,7 +108,8 @@
     <div class="container">
         <div layout="column">
             <div flex class="text-center">
-                <h1 class="margin-top-0 text-primary md-display-4 wow fadeIn">RSVP</h1>
+                <h1 class="margin-top-0 text-primary md-display-4 wow fadeIn" hide-sm hide-xs>RSVP</h1>
+                <h1 class="margin-top-0 text-primary md-display-3 wow fadeIn" hide-gt-sm>RSVP</h1>
                 <hr class="primary">
                 <h1 ng-if="!rsvpSent" class='cursive text-muted'>Tell us that you're coming to the big event!</h1>
                 <h1 ng-if="rsvpSent" class='cursive text-muted'>Thank you for your RSVP!</h1>
@@ -117,15 +120,18 @@
 	                    <form name="rsvpForm" id="rsvpForm" ng-submit="send(rsvpForm.$valid)" class="contact-form" novalidate>
                             <div layout="column">
                                 <md-radio-group ng-model="rsvp.answer" flex>
-                                    <div layout="row" layout-align="space-around center">
+                                    <div layout-gt-sm="row" layout-align="space-around center">
                                         <md-input-container class="md-block" flex-gt-sm>
-                                            <md-radio-button value="1" class="md-accent md-hue-1"> I Can't Wait! <small class="text-muted">&nbsp;&nbsp;just me</small> </md-radio-button>
+                                            <md-radio-button value="1" class="md-title md-accent md-hue-1"> I'll See You There!</md-radio-button>
+                                            <div class='hint'>just me</div>
                                         </md-input-container>
                                         <md-input-container class="md-block" flex-gt-sm>
-                                            <md-radio-button value="2" class="md-accent md-hue-1"> We Will See You There! <small class="text-muted">&nbsp;&nbsp;me +more</small> </md-radio-button>
+                                            <md-radio-button value="2" class="md-title md-accent md-hue-1"> We Will See You There!</md-radio-button>
+                                            <div class='hint'>me +more</div>
                                         </md-input-container>
                                         <md-input-container class="md-block" flex-gt-sm>
-                                            <md-radio-button value="0" class="md-accent md-hue-1"> Sad to Miss All of the Fun <small class="text-muted">&nbsp;&nbsp;:(</small> </md-radio-button>
+                                            <md-radio-button value="0" class="md-title md-accent md-hue-1"> Sad to Miss All of the Fun</md-radio-button>
+                                            <div class='hint'>:(</div>
                                         </md-input-container>
                                     </div>
                                 </md-radio-group>
@@ -135,26 +141,32 @@
                                         <md-input-container class="md-block" flex>
                                             <label>Number of People</label>
                                             <input type="number" name="numPeople" ng-model="rsvp.number" min="1" required>
+                                            <div class="hint text-left">Tell us how many people!</div>
                                         </md-input-container>
                                         <div flex></div>
                                     </div>
         	                        <div flex layout="row" ng-repeat="person in rsvp.people">
         	                            <md-input-container class="md-block" flex>
-        		                            <label>Full Name</label>
+        		                            <label>Full Name*</label>
         		                            <input name="name" ng-model="person.name" required>
+                                            <div class="hint text-left" ng-if="$index == 0">Tell us who you are!</div>
+                                            <div class="hint text-left" ng-if="$index > 0">Tell us who they are!</div>
         	                            </md-input-container>
                                         <div flex="5" hide-xs hide-sm>
                                           <!-- Spacer //-->
                                         </div>
         	                            <md-input-container class="md-block" flex>
-        		                            <label>Email</label>
+        		                            <label>Email*</label>
         		                            <input name="email" type="email" ng-model="person.email" required>
+                                            <div class="hint text-left" ng-if="$index == 0">Tell us how to reach you!</div>
+                                            <div class="hint text-left" ng-if="$index > 0">Tell us how to reach them!</div>
         	                            </md-input-container>
         	                        </div>
                                     <div flex>
                                         <md-input-container class="md-block">
                                             <label>Note <small>(optional)</small></label>
                                             <textarea ng-model="rsvp.note" columns="1" md-maxlength="150" rows="5"></textarea>
+                                            <div class="hint text-left">Leave us a little message :)</div>
                                         </md-input-container>
                                     </div>
                                     <div flex>
@@ -175,7 +187,8 @@
     <div class="container">
         <div layout-gt-sm="row">
             <div class="text-center" flex-gt-sm>
-                <h1 class="margin-top-0 text-primary md-display-4">Registry</h1>
+                <h1 class="margin-top-0 text-primary md-display-4" hide-sm hide-xs>Registry</h1>
+                <h1 class="margin-top-0 text-primary md-display-3" hide-gt-sm>Registry</h1>
                 <hr class="primary">
             </div>
         </div>
