@@ -163,7 +163,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 6701,
+				"buffer_size": 6754,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 15295,
+				"buffer_size": 15292,
 				"line_ending": "Unix"
 			}
 		},
@@ -724,6 +724,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"becker",
+			"the team",
+			"team",
+			"teams",
+			"team",
 			"IE",
 			"1/2",
 			" layout-margin",
@@ -846,12 +851,7 @@
 			"err",
 			"form-control",
 			"</option",
-			">",
-			"><option",
-			"modal",
-			"cma",
-			"\n\n                <div class=\"space-6\"></div>",
-			"<div class=\"space-6\"></div>"
+			">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -889,7 +889,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -898,15 +898,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6701,
+						"buffer_size": 6754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3433,
-								3433
+								957,
+								957
 							]
 						],
 						"settings":
@@ -917,10 +917,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1070.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1029,8 +1029,8 @@
 						"selection":
 						[
 							[
-								298,
-								298
+								2879,
+								2887
 							]
 						],
 						"settings":
@@ -1041,7 +1041,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 727.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1112,15 +1112,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15295,
+						"buffer_size": 15292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11711,
-								11711
+								7584,
+								7584
 							]
 						],
 						"settings":
@@ -1131,10 +1131,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3610.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1150,8 +1150,8 @@
 						"selection":
 						[
 							[
-								533,
-								533
+								547,
+								547
 							]
 						],
 						"settings":
@@ -1160,10 +1160,10 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 34.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1194,7 +1194,7 @@
 						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
