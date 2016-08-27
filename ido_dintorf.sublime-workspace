@@ -203,7 +203,7 @@
 			"file": "dist/views/privacy.html",
 			"settings":
 			{
-				"buffer_size": 3337,
+				"buffer_size": 3926,
 				"line_ending": "Unix"
 			}
 		},
@@ -219,7 +219,7 @@
 			"file": "app/scripts/controllers/main.js",
 			"settings":
 			{
-				"buffer_size": 15292,
+				"buffer_size": 15325,
 				"line_ending": "Unix"
 			}
 		},
@@ -1029,8 +1029,8 @@
 						"selection":
 						[
 							[
-								2879,
-								2887
+								449,
+								449
 							]
 						],
 						"settings":
@@ -1041,7 +1041,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 727.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1053,7 +1053,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3337,
+						"buffer_size": 3926,
 						"regions":
 						{
 						},
@@ -1112,15 +1112,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15292,
+						"buffer_size": 15325,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7584,
-								7584
+								13102,
+								13102
 							]
 						],
 						"settings":
@@ -1131,7 +1131,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3610.0,
+						"translation.y": 5136.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
