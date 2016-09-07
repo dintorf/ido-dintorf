@@ -52,6 +52,8 @@ angular.module('idodintorfcomApp')
         var ses = new AWS.SES({accessKeyId: $scope.aws.accessKey, secretAccessKey: $scope.aws.secretKey, region: 'us-west-2'});
         var msg = $scope.formatMsg();
         var num = $scope.rsvp.people.length;
+        var yesNo = parseInt($scope.rsvp.answer) > 0 ? "Yes" : "No";
+        var subject = $scope.rsvp.people[0].name + '(' + num + ') - Wedding RSVP ' + yesNo;
         console.log(msg);
         var params = {
           Destination: { /* required */
@@ -69,7 +71,7 @@ angular.module('idodintorfcomApp')
               }
             },
             Subject: { /* required */
-              Data: $scope.rsvp.people[0].name + '(' + num + ') - Wedding RSVP' /* required */
+              Data: subject /* required */
             }
           },
           Source: 'Intorf/Palbykin Wedding <dylan@dintorf.com>' /* required */
@@ -92,6 +94,8 @@ angular.module('idodintorfcomApp')
         msg += "Name" + (index+1) + ": " + value.name + "\n";
         msg += "Email" + (index+1) + ": " + value.email + "\n";
       });
+      var yesNo = parseInt($scope.rsvp.answer) > 0 ? "Yes" : "No";
+      msg += "Answer: " + yesNo + "\n";
       if($scope.rsvp.note){
         msg += "Note: " + $scope.rsvp.note;
       }
@@ -229,13 +233,13 @@ angular.module('idodintorfcomApp')
         title: 'Details',
         items: [
           {
-            details: "<div layout='column' layout-align='center center'><div flex><h1 class='text-left cursive'><b>Ceremony</b></h1></div><div flex><span class='text-left uppercase md-title'><b>The Falls Event Center</b></span></div><md-button href='https://thefallseventcenter.com/location/gilbert/' target='_blank' class='md-raised md-accent md-hue-1 text-white'>Website <i class='fa fa-arrow-right'></i></md-button><div class='md-title text-left' flex><address>4635 E. Baseline Rd.<br>Gilbert, AZ 85234<br><abbr title='Phone'>P:</abbr> <a href='tel:4805352141'>480.535.2141</a></address></div><div class='text-left md-title' layout-padding flex>Wedding starts promptly at 4:30 PM, so find your seats by 4:25 PM or risk the bride's wrath!</div><br /><div class='text-left md-title' layout-padding flex>The ceremony will be roughly 30 minutes, and should include all of the following:</div><div class='text-left md-title' layout-padding flex><ul class='fa-ul'><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Proud Parents</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Some Sort of Vows</li><li><i class='fa fa-diamond fa-fw'></i>&nbsp; Exchange of Something Sparkly</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Oohs and Aahs</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; One Life-Altering Kiss</li></ul></div></div>",
+            details: "<div layout='column' layout-align='center center'><div flex><h1 class='text-left cursive'><b>Ceremony</b></h1></div><div flex><span class='text-left uppercase md-title'><b>The Falls Event Center</b></span></div><md-button href='https://thefallseventcenter.com/location/gilbert/' target='_blank' class='md-raised md-accent md-hue-1 text-white'>Website <i class='fa fa-arrow-right'></i></md-button><div class='md-title text-left' flex><address>4635 E. Baseline Rd.<br>Gilbert, AZ 85234<br><abbr title='Phone'>P:</abbr> <a href='tel:4805352141'>480.535.2141</a></address></div><div class='text-left md-title' layout-padding flex>Wedding starts promptly at 4:00 PM, so find your seats by 3:55 PM or risk the bride's wrath!</div><br /><div class='text-left md-title' layout-padding flex>The ceremony will be roughly 30 minutes, and should include all of the following:</div><div class='text-left md-title' layout-padding flex><ul class='fa-ul'><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Proud Parents</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Some Sort of Vows</li><li><i class='fa fa-diamond fa-fw'></i>&nbsp; Exchange of Something Sparkly</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; Oohs and Aahs</li><li><i class='fa fa-arrow-right fa-fw'></i>&nbsp; One Life-Altering Kiss</li></ul></div></div>",
           },
           {
             details: "<div layout='column' layout-align='center center'><div flex><h1 class='text-left cursive'><b>Cocktails/Photos</b></h1></div><div class='text-left md-title' layout-padding flex><ul class='fa-ul'><li class='uppercase'><b>If you are immediate family</b></li><li>After the ceremony, we are holding you hostage for photos. We promise to keep it as short and sweet as possible!</li><li>&nbsp;</li><li class='uppercase'><b>If you are a friend</b></li><li>Run away! Dash on over to the cocktail hour area for drinks and tasty snacks while the family snaps some photos. Don't worry, we will come by later for your photo op with the happy couple!</li><li>&nbsp;</li></ul></div></div>",
           },
           {
-            details: "<div layout='column' layout-align='center center'><div flex><h1 class='text-left cursive'><b>Reception</b></h1></div><div class='text-left md-title' layout-padding flex>Starts at 6:00 PM. Dinner will be served buffet style, and will be interrupted by various toasts, possibly a few tears, and laughter.</div><br /><div class='text-left md-title' layout-padding flex>After our bellies are full, there will be dancing, kicked off by the newly weds!</div><br /><div class='text-left md-title' layout-padding flex>Right about the time your feet start to ache from the sheer awesomeness of your dance moves, we will cut and serve the cake, ensuring a sugar high that will keep us dancing until 11:00 PM.</div></div>",
+            details: "<div layout='column' layout-align='center center'><div flex><h1 class='text-left cursive'><b>Reception</b></h1></div><div class='text-left md-title' layout-padding flex>Starts at 5:30 PM. Dinner will be served buffet style, and will be interrupted by various toasts, possibly a few tears, and laughter.</div><br /><div class='text-left md-title' layout-padding flex>After our bellies are full, there will be dancing, kicked off by the newly weds!</div><br /><div class='text-left md-title' layout-padding flex>Right about the time your feet start to ache from the sheer awesomeness of your dance moves, we will cut and serve the cake, ensuring a sugar high that will keep us dancing until 11:00 PM.</div></div>",
           }
         ]
       },
