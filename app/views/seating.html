@@ -1,0 +1,21 @@
+<section id="story" class="bg-dark">
+    <div layout-xs="column" layout="row" layout-wrap layout-padding>
+        <div flex-xs flex-gt-sm="20" flex-gt-xs="30"  ng-repeat="table in seating.tables track by $index">
+            <md-card>
+                <md-card-header>
+                    <md-card-header-text>
+                        <span class="md-title text-muted">Table #{{$index+1}}</span>
+                        <span class="md-subhead">{{table.people.length}} people</span>
+                    </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                    <md-list>
+                        <md-list-item ng-repeat="guest in table.people" class="text-muted">
+                            {{guest}}
+                        </md-list-item>
+                    </md-list>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+</section>

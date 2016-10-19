@@ -55,7 +55,7 @@ angular.module('idodintorfcomApp')
 
   // configure views; whenAuthenticated adds a resolve method to ensure users authenticate
   // before trying to access that route
-  .config(['$routeProvider', function($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -64,6 +64,10 @@ angular.module('idodintorfcomApp')
       .when('/privacy', {
         templateUrl: 'views/privacy.html',
         controller: 'PrivacyCtrl'
+      })
+      .when('/seating', {
+        templateUrl: 'views/seating.html',
+        controller: 'SeatingCtrl'
       })
       .otherwise({redirectTo: '/'});
   }])
